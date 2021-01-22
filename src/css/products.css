@@ -1,0 +1,34 @@
+body{
+    font-family: 'roboto light', medium, bold;    
+}
+.box{        
+    padding: 20px;    
+    background-color: rgb(234, 234, 234);
+    margin: 20px 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(122, 176, 240);
+}
+.img{
+    width: 80%;    
+}
+strong{
+    color: rgb(0, 123, 253);
+    font-size: 30px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(70, 90, 96);
+}
+.beyond{
+    margin-top: -20px;
+    position: relative;
+    right: -40px; 
+    color: rgb(145, 158, 164);
+    font-size: 20px;
+
+}
+.hola{
+    font-size: 40px;
+    color: rgb(0, 123, 253);
+}
