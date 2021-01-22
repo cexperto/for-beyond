@@ -20,15 +20,27 @@ h3{
     font-weight: bold;
     color: rgb(70, 90, 96);
 }
-.beyond{
-    margin-top: -20px;
-    position: relative;
-    right: -40px; 
-    color: rgb(145, 158, 164);
-    font-size: 20px;
 
-}
 .hola{
     font-size: 40px;
     color: rgb(0, 123, 253);
 }
+.icon{    
+    width: 200px;
+    margin-right: 500px;
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width: 570px) {
+    .centerImg {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 985px) {
+    .box {
+      width: 354px;
+    }
+    .centerImg {
+        display: none;
+      }
+  }

@@ -1,0 +1,48 @@
+body{
+    font-family: 'roboto light', medium, bold;
+    overflow-x: hidden;
+}
+.box1, .box2, .box3{
+    width: 250px;    
+    height: 250px;    
+    margin: 10px 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(122, 176, 240);
+}
+.img{
+    width: 80%;    
+}
+strong{
+    color: rgb(0, 123, 253);
+    font-size: 30px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(70, 90, 96);
+}
+.hola{
+    font-size: 40px;
+    color: rgb(0, 123, 253);
+}
+.icon{    
+    width: 200px;
+    margin-right: 500px;    
+    padding: 5px 10px;    
+}
+.box1{
+    background-color: rgb(16, 147, 136);
+}
+.box2{
+    background-color: rgb(229, 123, 27);
+}
+.box3{
+    background-color: rgb(223, 0, 61);
+}
+.col-sm{
+    width: 400px;
+}
+.animation:hover{
+    width: 255px;
+    height: 255px;
+}

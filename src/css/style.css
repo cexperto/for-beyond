@@ -1,11 +1,17 @@
 body{
     font-family: 'roboto light', medium, bold;    
     background-image:     
-    url("../img/laptop-1149412_1920.jpg");
+    url("../img/computer-2242262_1920.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
+.fondo{
+    margin-top: -10px;
+    width: 90%;
+    padding: 1px;
 }
 .input--color{
     background-color: #eaf1f9;
@@ -13,4 +19,13 @@ body{
 a{
     color: #097df9;
 }
-/* products */
+.icon{    
+    width: 200px;
+    margin-right: 500px;    
+    padding: 5px 10px;
+}
+.card{
+    background: rgba(231, 216, 216, 0.5);    
+    padding: 10px;
+    border-radius: 5px;
+}
