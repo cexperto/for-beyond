@@ -19,13 +19,40 @@ body{
 a{
     color: #097df9;
 }
-.icon{    
-    width: 200px;
-    margin-right: 500px;    
-    padding: 5px 10px;
-}
+
 .card{
     background: rgba(231, 216, 216, 0.5);    
     padding: 10px;
     border-radius: 5px;
 }
+
+.icon{    
+    width: 400px;
+    padding: 20px 20px;    
+}
+.spaceIcon{
+    height: 280px;
+}
+.space{
+    margin-top: 20px;
+}
+::placeholder{
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+    .icon{
+        padding: 10px 30px;
+    }
+}
+@media only screen and (max-width: 1039px) {
+    .spaceIcon{
+    height: 120px;
+    }
+    .fondo{
+        margin-top: 90px;
+    }
+    .icon{    
+        margin-top: 20px;
+    }
+  }
+  
