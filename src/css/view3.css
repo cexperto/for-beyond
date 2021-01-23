@@ -1,21 +1,20 @@
 body{
-    font-family: 'roboto light', medium, bold;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    
 }
 .box1, .box2, .box3{
-    width: 250px;    
-    height: 250px;    
+    width: 300px;    
+    height: 200px;    
     margin: 10px 10px;
+    padding: 15px;
     border-radius: 15px;
     border: 2px solid rgb(122, 176, 240);
 }
 .img{
     width: 80%;    
 }
-strong{
-    color: rgb(0, 123, 253);
-    font-size: 30px;
-}
+
 h3{
     font-size: 30px;
     font-weight: bold;
@@ -51,6 +50,19 @@ h3{
     color: white;    
 }
 .animation:hover{
-    width: 255px;
-    height: 255px;
+    width: 288px;
+    height: 208px;
+}
+.container{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+.s{
+    height: 120px;
+}
+@media only screen and (max-width: 1010px) {
+    .s{
+        height: 40px;
+    }
 }

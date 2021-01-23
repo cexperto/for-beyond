@@ -1,5 +1,5 @@
 body{
-    font-family: 'roboto light', medium, bold;    
+    font-family: 'Roboto', sans-serif;  
     background-image:     
     url("../img/computer-2242262_1920.jpg");
     background-size: cover;
@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
 }
 .fondo{
-    margin-top: -10px;
+    
     width: 90%;
     padding: 1px;
 }
@@ -28,7 +28,8 @@ a{
 
 .icon{    
     width: 400px;
-    padding: 20px 20px;    
+    padding: 20px 20px;
+    
 }
 .spaceIcon{
     height: 280px;
@@ -44,15 +45,9 @@ a{
         padding: 10px 30px;
     }
 }
-@media only screen and (max-width: 1039px) {
-    .spaceIcon{
-    height: 120px;
-    }
+@media only screen and (max-width: 1039px) {    
     .fondo{
         margin-top: 90px;
-    }
-    .icon{    
-        margin-top: 20px;
-    }
+    }    
   }
   

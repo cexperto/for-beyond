@@ -6,14 +6,15 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        
+        <img src="./src/img/4B FOR BEYOND.png" alt="" class="icon">
     </header>
     <center>
     <div class="fondo">
-        <div class="container" style="margin-top: 20%">
+        <div class="container" style="margin-top: 10%">
             <div class="row">
                 <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                     <div class="card">
@@ -40,18 +41,6 @@
         </div>
     </div></center>
     <div class="spaceIcon"></div>
-    <div class="row">
-        <div class="col-sm">
-
-        </div>
-        <div class="col-sm">
-            
-        </div>
-        <div class="col-sm">
-            <img src="./src/img/4B FOR BEYOND.png" alt="" class="icon">
-            
-        </div>
-        
-    </div>
+    
 </body>
 </html>
