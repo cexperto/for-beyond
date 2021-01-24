@@ -1,20 +1,32 @@
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;    
+    background-image: url('../img/studio-shot-of-positive-dark-skinned-girl-wears-round-transparent-glasses.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow-x: hidden;
-    
 }
 .box1, .box2, .box3{
     width: 300px;    
-    height: 200px;    
-    margin: 10px 10px;
+    height: 150px;    
+    margin: 30px 10px;
     padding: 15px;
     border-radius: 15px;
     border: 2px solid rgb(122, 176, 240);
+    background-image: url('../img/Boton-1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(16, 147, 136);
 }
 .img{
     width: 80%;    
 }
-
+.fondo{
+    
+}
 h3{
     font-size: 30px;
     font-weight: bold;
@@ -29,15 +41,7 @@ h3{
     margin-right: 400px;
     padding: 15px 20px;    
 }
-.box1{
-    background-color: rgb(16, 147, 136);
-}
-.box2{
-    background-color: rgb(229, 123, 27);
-}
-.box3{
-    background-color: rgb(223, 0, 61);
-}
+
 .col-sm{
     width: 400px;
 }
@@ -50,19 +54,49 @@ h3{
     color: white;    
 }
 .animation:hover{
-    width: 288px;
-    height: 208px;
+    background-color:rgb(134 , 231, 238) ;
+    width: 305px;
+    height: 155px;
 }
-.container{
+/* .container{
     display: flex;
     align-items: center;  
     justify-content: space-between;
-}
+} */
 .s{
     height: 120px;
 }
-@media only screen and (max-width: 1010px) {
-    .s{
-        height: 40px;
+.new{
+    width: 100px;  
+    margin-bottom: -30px;
+}
+@media only screen and (max-width: 800px) {
+    body{
+        background-image: url('../img/fondo.png');
+    }
+    .fondo{
+        display: none;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .box1, .box2, .box3{
+        width: 200px;
+        height: 180;
+        margin: 5px;
+        margin-left: 10px;
+        margin-bottom: 20px;        
+    }
+    .icon{
+        width: 90%;
+    }
+    .new{
+        width: 50px;
+        margin-bottom: -5px;
+    }
+    .animation:hover{
+        width: 205px;
+    }
+    .container{
+        margin-top: 100px;
     }
 }
