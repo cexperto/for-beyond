@@ -1,17 +1,17 @@
 body{
     font-family: 'Roboto', sans-serif;  
-    background-image:     
-    url("../img/computer-2242262_1920.jpg");
+    /* background-color: rgb(77, 76 , 75); */
+    /* background-image: url('../img/Login\ -\ copia.jpg');
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-x: hidden;
-}
-.fondo{
     
-    width: 90%;
-    padding: 1px;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    overflow: hidden;
+    height: 100%;
+}
+
+.fondo{    
+    width: 100%;    
 }
 .input--color{
     background-color: #eaf1f9;
@@ -20,10 +20,10 @@ a{
     color: #097df9;
 }
 
-.card{
-    background: rgba(231, 216, 216, 0.5);    
-    padding: 10px;
-    border-radius: 5px;
+.card{    
+        
+    border: 0px solid white;    
+
 }
 
 .icon{    
@@ -35,19 +35,72 @@ a{
     height: 280px;
 }
 .space{
-    margin-top: 20px;
+    height: 15px;
 }
 ::placeholder{
     text-align: center;
 }
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+.title{
+    margin-top: 80px;
+}
+.col-sm{
+    margin: 0px;
+    padding: 0px;
+}
+.description{
+    font-size: 20px;
+    color: rgb(147, 152, 157);
+    padding-bottom: 30px;
+}
+.forget{
+    margin-top: 40px;
+}
+.key{
+    width: 20px;
+}
+.row{
+    height: inherit;
+}
+.col-xl-5{
+    height:100%;
+    width: 60%;    
+}
+.flags{
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.flag{
+    width: 40px;
+    
+}
+
 @media only screen and (max-width: 500px) {
+    body{
+        overflow: hidden;
+    }
+    .sp{
+        margin-top: -40px;
+    }
     .icon{
-        padding: 10px 30px;
+        width: 90%;
+        padding: 5px 30px;
+        
+        margin-bottom: 10px;
+    }
+    .card{
+        margin: 10px;
     }
 }
-@media only screen and (max-width: 1039px) {    
+
+/* @media only screen and (max-width: 1039px) {    
     .fondo{
         margin-top: 90px;
     }    
   }
-  
+ */  

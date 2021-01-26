@@ -1,0 +1,139 @@
+body{
+    font-family: 'Roboto', sans-serif;  
+    background-image:     
+    url("../img/Fondo-3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.box{    
+    padding: 20px;        
+    margin: 20px 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(122, 176, 240);
+    box-shadow: 3px 3px 3px 3px #666666;    
+}
+.box1{
+    background-image: ('/src/img/es.png');
+}
+.box2{
+    background-image: ('/src/img/Estudiante.png');
+}
+.box:hover{
+    background-color: rgb(210, 210, 210);    
+}
+.img{
+    width: 80%;
+    height: auto;
+}
+.img2{
+    width: 85%;    
+}
+strong{
+    color: rgb(0, 123, 253);
+    font-size: 30px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(70, 90, 96);
+}
+
+.hola{
+    font-size: 40px;
+    color: rgb(69, 158, 209);
+}
+.icon{    
+    width: 400px;
+    margin-right: 400px;
+    padding: 15px 20px;
+}
+.row{
+    margin-top: 60px;
+}
+.title{
+    color: gray;
+    font-size: 40px;
+}
+@media only screen and (max-width: 570px) {
+    body{
+        overflow: hidden;
+    }
+    .centerImg {
+      display: none;
+    }
+    .icon{
+    width: 90%;
+    margin-left: 20%;       
+    }
+    .img{
+        padding: 5px;        
+    }
+    .line{
+        margin: 40px 10px 5px 10px;
+        height: 300px;
+    }
+    .title{
+        font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 985px) {
+      body{
+          overflow: hidden;
+      }
+    .box {
+      width: 80%;
+    }      
+    .centerImg {
+        display: none;
+      }
+  }
+  @media only screen and (max-width: 500px) {    
+      .img{
+          width: 80%;
+          margin-left: 40px;
+      }
+      .col-sm{
+         padding-right: 20px;
+      }
+      .hola{
+          width: 80%;                    
+          font-size: 30px;
+          margin-bottom: 5px;
+
+      }
+    .box{
+        width: 70%;
+        padding: 0px;        
+      }
+      .row{
+          margin-top: 1px;
+      }
+      .icon{
+          width: 60%;
+      }
+      .container{
+          height: 50px;
+      }
+    }
+@media only screen and (max-width: 1800px) {
+ .container{
+     margin-top: -50px;
+ }   
+}
+@media only screen and (max-width: 500px) {
+    .box{
+        width: 90%;
+        margin-left: 15px;
+        overflow: hidden;            
+        }
+        .space{
+        height: 40px;
+        }
+        .hola{
+            margin-bottom: 40px;
+        }        
+        
+}

@@ -1,5 +1,12 @@
 body{
     font-family: 'Roboto', sans-serif;  
+    background-image: url('../img/Fondo-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .box{        
     padding: 20px;    
@@ -11,7 +18,7 @@ body{
 }
 
 .box:hover{
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(210, 210, 210);
     
 }
 .img{
@@ -38,6 +45,9 @@ h3{
 }
 .row{
     margin-top: 70px;
+}
+.space{
+    height: 80px;
 }
 
 @media only screen and (max-width: 570px) {
@@ -77,9 +87,30 @@ h3{
           margin-top: 1px;
       }
       .icon{
-          width: 60%;
-      }
+        width: 70%;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
       .container{
           height: 50px;
       }
+      .space{
+          height: 40px;
+      }
+      .hola{
+          margin-bottom: 20px;
+      }
     }
+@media only screen and (max-width: 330px) {
+.box{
+    width: 90%;
+    margin-left: 15px;            
+}
+.space{
+    height: 20px;
+}
+.hola{
+    margin-bottom: 40px;
+}
+
+}

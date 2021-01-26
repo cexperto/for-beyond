@@ -1,0 +1,67 @@
+html, body{
+    height:100%;
+    margin:0;
+    
+  }
+  .containerL{
+    height:100%;
+    width: 100%;    
+    display: flex;
+  }
+  .container2{
+      width: 59%;
+      height: 100%;
+      
+  }
+  .container3{
+      height: 100%;
+  
+  }
+  
+  .carousel-item__img{
+      height: 100%;    
+      object-fit: cover;
+  }
+  @media only screen and (max-width: 1800px) {
+      .container3{        
+          width: 50%;
+          margin-right: 10%;
+      }
+      .flags{
+          width: 60%;
+      }
+      .title{
+        margin-top: 40px;
+    }
+  }
+  @media only screen and (max-width: 1230px) {
+      .container3{
+          margin-right: 20%;
+      }
+  }
+  @media only screen and (max-width: 800px) {
+      .container2{
+          display: none;
+      }
+      .container3{
+          width: 100%;
+          margin: 10px 40px;
+          padding: 5px;
+      }
+      .flags{
+          width: 50%;
+      }
+  }
+  @media only screen and (max-width: 500px) {
+      .container2{
+          display: none;
+      }
+      .container3{
+          width: 100%;
+          margin: 10px;
+          padding: 5px;
+      }
+      .flags{
+          width: 100%;
+      }
+  }
