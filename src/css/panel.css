@@ -14,9 +14,10 @@ body {
     align-items: center;
   }
   .header__img {
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 200px;    
+    margin-top: -15px; 
+    height: 50px; 
+    padding-top: 10px;
   }
   .header__menu {
     margin-right: 30px;
@@ -88,7 +89,13 @@ body {
   background-color: white; 
   margin-top: 10px;
 }
-  @media screen and (max-width: 600px) {
+.menu{
+  display: none;
+}
+.iconUser{
+  width: 40px;
+}
+  @media screen and (max-width: 765px) {
     
     table {
         width:100%;
@@ -112,6 +119,27 @@ body {
         content: attr(data-th);
         display: block;
         text-align:center;
+    }
+    .page-custom{
+      margin-top: 60px;
+      background-color: rgb(245, 245, 245);
+      border: 0px;
+    }
+    .menu{
+      display: block;
+      margin-left: 400px;
+    }
+    .navbarCustom{
+      height: 70px;
+    }
+    .header__img {
+      
+    }
+    .navbar-header{
+      height: 60px;
+    }
+    .header__menu--profile{
+      display: none;
     }
 }
 @media screen and (max-width: 400px) {
@@ -147,7 +175,7 @@ body {
   }
     
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 350px) {
   tr td:first-child {
     background: #f0f0f0;
     font-weight:bold;
