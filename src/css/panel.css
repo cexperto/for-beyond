@@ -80,6 +80,14 @@ body {
   .v{
       width: 100px;
   }
+.verde{
+  width: 15px;
+  height: 15px;
+}
+.contentProfile{
+  background-color: white; 
+  margin-top: 10px;
+}
   @media screen and (max-width: 600px) {
     
     table {
@@ -105,4 +113,54 @@ body {
         display: block;
         text-align:center;
     }
+}
+@media screen and (max-width: 400px) {
+    
+  table {
+      width:70%;
+  }
+  thead {
+      display: none;
+  }
+  tr:nth-of-type(1n) {
+      background-color: inherit;
+  }
+  tr td:first-child {
+      background: #f0f0f0;
+      font-weight:bold;
+      font-size:1em;      
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+  }
+  .navbarCustom{
+    width: 100%;
+  }
+  .btn{
+    width: 85%;
+  }
+    
+}
+@media screen and (max-width: 325px) {
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight:bold;
+    font-size:.8em;    
+}
+
+.img{
+  width: 15px;
+}
+td, tr{
+  width: 320px;
+}
+.contentProfile{
+  margin-top: 40px;
+}
 }
