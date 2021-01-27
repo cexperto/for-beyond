@@ -8,24 +8,31 @@ html, body{
     width: 100%;    
     display: flex;
   }
-  .container2{
-      width: 59%;
+  .container2{      
       height: 100%;
-      
+      width: 60%;
+      margin: 0px;
   }
   .container3{
       height: 100%;
-  
   }
   
   .carousel-item__img{
       height: 100%;    
       object-fit: cover;
   }
+  .between{
+    height: 40px;
+  }
   @media only screen and (max-width: 1800px) {
-      .container3{        
-          width: 50%;
-          margin-right: 10%;
+      .icon{
+          margin-bottom: 20px;
+      }
+      .container2{
+          width: 40%;
+      }
+      .container3{
+          margin-left: 2%;
       }
       .flags{
           width: 60%;
@@ -33,11 +40,81 @@ html, body{
       .title{
         margin-top: 40px;
     }
+    .description{
+        margin-bottom: 20px;
+    }
   }
-  @media only screen and (max-width: 1230px) {
-      .container3{
-          margin-right: 20%;
+  @media only screen and (max-width: 1920px) and (max-height: 1080px){
+      .icon{
+          width: 80%;
+          margin-top: 20px;
+          margin-bottom: 20px;
       }
+      .description{
+          font-size: 40px;
+          
+      }
+    .container3{
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 100%;
+    }
+    .forget{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .blanco{
+        width: 10px;
+    }
+}
+  
+  @media only screen and (max-width: 1300px) {
+      .container3{
+          margin-top: 50px;
+          margin-left: 26%;
+      }      
+  }
+  
+  @media only screen and (max-height: 890px) {
+    .container3{
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+@media only screen and (max-height: 500px) {
+        .container2{
+            display: none;
+        }
+        .container3{
+            margin-top: 50px;
+            margin-left: 50%;
+        }   
+  }
+@media only screen and (max-height: 625px) {
+    .container3{
+        margin-top: -10px;
+    }
+}
+
+}
+@media only screen and (max-width: 1530px) and (max-height: 890px){
+    .container3{        
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 1400px) and (max-height: 890px){
+    .container3{
+        margin-left: 16%;
+    }
+}
+
+  @media only screen and (max-width: 1230px) {
+    .icon{
+        width: 300px;
+    }
+    .container3{
+        width: 320px;
+    }
   }
   @media only screen and (max-width: 800px) {
       .container2{
@@ -64,4 +141,16 @@ html, body{
       .flags{
           width: 100%;
       }
+    .title{
+        margin-top: 5px;
+    }
+    .description{
+        padding-bottom: 10px;
+    }
+    .between{
+        height: 30px;
+    }
+    .container3{
+        margin-right: 20px;
+    }
   }

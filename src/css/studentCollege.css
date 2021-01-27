@@ -6,13 +6,15 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .box{    
     padding: 20px;        
     margin: 20px 50px;
     border-radius: 5px;
     border: 2px solid rgb(122, 176, 240);
+    background-color: white;
     box-shadow: 3px 3px 3px 3px #666666;    
 }
 .box1{
@@ -57,6 +59,19 @@ h3{
     color: gray;
     font-size: 40px;
 }
+@media only screen and (max-width: 1920px) and (max-height: 1080px){
+   .container{
+    max-width: 1920px;
+    margin-top: 40px;
+   }
+   .box{
+       width: 500px;
+   }
+   .row{
+       margin-top: 200px;
+   }
+}
+
 @media only screen and (max-width: 570px) {
     body{
         overflow: hidden;

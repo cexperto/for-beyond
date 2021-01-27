@@ -8,6 +8,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 .box{        
     padding: 20px;    
     background-color: rgb(234, 234, 234);
@@ -49,16 +50,13 @@ h3{
 .space{
     height: 80px;
 }
-
-@media only screen and (max-width: 570px) {
-    .centerImg {
-      display: none;
+@media only screen and (max-width: 2000px) {
+    .container{
+        margin-top: -2%;
+        margin-left: 3%;
     }
-    .icon{
-    width: 90%;
-    }
-  }
-  @media only screen and (max-width: 985px) {
+}
+@media only screen and (max-width: 985px) {
     .box {
       width: 80%;
     }      
@@ -66,51 +64,76 @@ h3{
         display: none;
       }
   }
-  @media only screen and (max-width: 500px) {    
-      .img{
-          width: 80%;
-      }
-      .col-sm{
-         padding-right: 20px;
-      }
-      .hola{
-          width: 80%;                    
-          font-size: 30px;
-          margin-bottom: 5px;
-
-      }
-    .box{
-        width: 70%;
-        padding: 0px;        
-      }
-      .row{
-          margin-top: 1px;
-      }
-      .icon{
-        width: 70%;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-      .container{
-          height: 50px;
-      }
-      .space{
-          height: 40px;
-      }
-      .hola{
-          margin-bottom: 20px;
-      }
-    }
-@media only screen and (max-width: 330px) {
-.box{
-    width: 90%;
-    margin-left: 15px;            
+@media only screen and (max-width: 570px) {
+.centerImg {
+    display: none;
 }
+.icon{
+width: 60%;
+margin-left: 25%;
+}
+.space{
+    height: 40px;
+}
+.hola{
+    font-size: 20px;
+}
+.row{
+    margin-top: 2%;
+}
+}
+@media only screen and (max-width: 500px) {    
+    .img{
+        width: 80%;
+    }
+    .col-sm{
+        padding-right: 20px;
+    }
+    .hola{
+        width: 80%;                    
+        font-size: 30px;
+        margin-bottom: 5px;
+
+    }
+    .box{
+    width: 70%;
+    padding: 0px;        
+    }
+    .row{
+        margin-top: 1px;
+    }
+    .icon{
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 20px;
+    }
+    .container{
+        height: 50px;
+    }
+    .space{
+        height: 40px;
+    }
+    .hola{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 370px) {
+body{    
+    background-image: none;
+    overflow: hidden;
+}
+.box{
+    width: 80%;
+    margin-left: 20px;                       
+}
+
 .space{
     height: 20px;
 }
 .hola{
-    margin-bottom: 40px;
+    margin-left: -30px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 }
