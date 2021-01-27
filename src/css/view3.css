@@ -13,7 +13,7 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: rgb(16, 147, 136);
+    /* background-color: rgb(16, 147, 136); */
 }
 .box3{
     margin-top: -25px;
@@ -54,7 +54,7 @@ h3{
     color: white;    
 }
 .animation:hover{
-    background-color:rgb(134 , 231, 238) ;
+    /* background-color:rgb(134 , 231, 238) ; */
     width: 305px;
     height: 155px;
 }
@@ -71,7 +71,223 @@ h3{
     margin-left: 350px;
     margin-top: -50px;
 }
-@media only screen and (max-width: 1290px) {
+.row{
+    margin: 0px;
+}
+@media only screen and (max-width: 360px) and (max-height: 400px){
+    .icon{
+        width: 60%;
+        margin: 0px;
+        margin-left: 20%;
+        padding: 10px;
+    }
+    .c-view, .view{
+        display: none;
+    }
+    .box1, .box2, .box3{
+        width: 200px;
+        height: 90px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .box3{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .animation:hover{
+        width: 205px;
+        height: 95px;
+    }
+    .col-sm{
+        width: 100%;
+        padding: 0px;
+    }
+    .new{
+        width: 25px;
+        margin: 0px;
+        margin-left: 70%;
+    }
+    .space{
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 360px) and (max-height: 700px){
+    .icon{
+        width: 300px;
+        margin: 0px;
+        margin-left: 20%;
+        padding: 10px;
+    }
+    .c-view, .view{
+        display: none;
+    }
+    .box1, .box2, .box3{
+        width: 80%;
+        height: 90px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .box3{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .animation:hover{
+        width: 205px;
+        height: 95px;
+    }
+    .col-sm{
+        width: 100%;
+        padding: 0px;
+    }
+    .new{
+        width: 25px;
+        margin: 0px;
+        margin-left: 70%;
+    }
+    .space{
+        height: 20px;
+    }
+    .col-sm{
+        width: 100%;
+    }
+    .container{
+        margin: 0px;
+        max-width: 360px;
+    }
+    .row{
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 550px) and (max-height: 1170px){
+    .icon{
+        width: 60%;
+        margin: 0px;
+        margin-left: 20%;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .c-view, .view{
+        display: none;
+    }
+    .box1, .box2, .box3{
+        width: 80%;
+        height: 100px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 0px;        
+    }
+    .box3{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }    
+    .col-sm{
+        width: 100%;
+        padding: 0px;
+    }
+    .new{
+        width: 25px;
+        margin: 0px;
+        margin-left: 80%;
+    }
+    .space{
+        height: 20px;
+    }
+    .animation:hover{
+        width: 81%;
+        height: 101px;
+        background-color: none;
+    }
+}
+@media only screen and (max-width: 880px) and (max-height: 1170px){
+    .c-view, .view{
+     display: none; 
+    }
+    
+    .space{
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 1100px) and (max-height: 1170px){
+    .c-view, .view{
+        width: 550px;        
+        max-width: 700px;
+    }
+    .animation{
+        width: 200px;
+    }
+    
+    .animation:hover{
+        width: 81%;
+        height: 101px;
+        background-color: none;
+    }
+    .box1, .box2, .box3{
+        width: 80%;
+        height: 100px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 0px;        
+    }
+}
+@media only screen and (max-width: 1600px) and (max-height: 1170px){
+    .container {
+        
+        max-width: 1800px;
+    }
+    .row{
+        width: 100%;
+    }
+    .view{
+        margin-left: -150px;
+    }
+    .box1,.box2, .box3{
+        width: 70%;
+        
+    }
+    .new{
+        margin-left: 70%;
+    }
+    .c-view{
+        margin-top: 80px;
+    }
+    .animation:hover{
+        width: 71%;
+    }
+    
+}
+@media only screen and (max-width: 1920px) and (max-height: 1170px){
+    .container {        
+        max-width: 1800px;
+    }
+    .row{
+        width: 100%;
+    }
+    .c-view{
+        margin-left: 200px;
+    }
+    
+    .box1,.box2, .box3{
+        width: 70%;
+        
+    }
+    .new{
+        margin-left: 70%;
+    }
+    .c-view{
+        margin-top: 80px;
+    }
+    .animation:hover{
+        width: 71%;
+    }
+    .space2{
+        height: 20px;
+    }
+    
+}
+/* @media only screen and (max-width: 1290px) {
     .container{
         margin-top: 100px;
     }
@@ -125,3 +341,4 @@ h3{
     }
 
 }
+ */
