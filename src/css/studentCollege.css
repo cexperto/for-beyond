@@ -56,13 +56,39 @@ h3{
 .box:hover{
     background-color: rgb(221, 212, 212);    
 }
+@media only screen and (max-width: 360px) and (max-height: 575px){
+    .icon{
+        width: 100px;
+        margin: 0px;
+    }
+    .col-sm{
+        margin-top: -10px;
+    }
 
-@media only screen and (max-width: 375px) and (max-height: 900px){
+}
+@media only screen and (max-width: 375px) and (max-height: 550px){
     .title{
         font-size: 5px;
     }
+    .icon{
+        width: 20%;
+    }
     .box:hover{
         background-color: rgb(173, 167, 167);    
+    }
+    .box{
+        width: 300px;
+        height: 180px;
+    }
+    .line{
+        width: 100%;
+    }
+    .img2{
+        width: 80%;
+        margin:10px;
+    }
+    .line2{
+        width: 440px;
     }
 
 }
@@ -84,6 +110,9 @@ h3{
         font-size: 20px;
         margin: 0px;
         color: gray;
+    }
+    .box{
+        width: 300px;
     }
     
 }
@@ -121,20 +150,36 @@ h3{
     }
     .icon{
     width: 90%;
-    margin-left: 20%;       
+    margin-left: 10%;       
     }
     .img{
         padding: 5px;        
     }
     .line{
-        width: 300px;
-        margin: 40px 10px 5px 10px;
-        height: 230px;
+        width: 100%;
+        margin: 20px 10px 5px 10px;
+        height: 200px;
     }
     .title{
         font-size: 20px;
     }
-    
+    .colegio{
+        font-size: 15px;
+    }
+    .estudiante{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .box{
+        width: 200px;        
+    }
+    .img2{
+        width: 70%;
+        margin-top: -10px;
+    }
+    .line2{
+        width: ;
+    }
   }
   /* @media only screen and (max-width: 985px) {
       body{
