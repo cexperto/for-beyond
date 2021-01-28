@@ -122,7 +122,9 @@ ul:hover{
   background-color: #4CAF50; /* Add a green color to the "active/current" link */
   color: white;
 }
-
+.buttons{
+  width: 100%;
+}
 @media screen and (max-width: 765px) {  
   .navbar-nav > li > a {
     padding-top: 10px;
@@ -193,9 +195,11 @@ ul:hover{
     width: 100%;
   }
   .btn{
-    width: 85%;
+    width: 100%;
   }
-    
+  .header__img {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 350px) {
   tr td:first-child {
