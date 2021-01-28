@@ -1,12 +1,11 @@
 body {
     margin: 0px;
     font-family: 'Muli', sans-serif;
-    background-color: rgb(245, 245, 245);
-    
+    background-color: rgb(245, 245, 245);    
     overflow-x: hidden;
   }
-  .header {
-    background-color: rgba(63 , 69, 74);
+  header {
+    background-color:#33a8ef;
     width: 100%;
     height: 80px;
     display: flex;
@@ -38,7 +37,7 @@ body {
     margin: 10px 0px;
   }
   .header__menu li a {
-    color: white;
+    color: black;
     text-decoration: none;    
   }
   .header__menu li a:hover {
@@ -56,7 +55,7 @@ body {
   }
   .header__menu--profile p {
     margin: 0px;
-    color: white;
+    color: black;
   }
   .main{
       height: 300px;
@@ -89,61 +88,84 @@ body {
   background-color: white; 
   margin-top: 10px;
 }
-.menu{
-  display: none;
+.menuNav:hover{
+  color: #f0f0f0;
+  background-color: blue;
+  
 }
 .iconUser{
   width: 40px;
 }
-  @media screen and (max-width: 765px) {
-    
-    table {
-        width:100%;
-    }
-    thead {
-        display: none;
-    }
-    tr:nth-of-type(2n) {
-        background-color: inherit;
-    }
-    tr td:first-child {
-        background: #f0f0f0;
-        font-weight:bold;
-        font-size:1.3em;
-    }
-    tbody td {
-        display: block;
-        text-align:center;
-    }
-    tbody td:before {
-        content: attr(data-th);
-        display: block;
-        text-align:center;
-    }
-    .page-custom{
-      margin-top: 60px;
-      background-color: rgb(245, 245, 245);
-      border: 0px;
-    }
-    .menu{
-      display: block;
-      margin-left: 400px;
-    }
-    .navbarCustom{
-      height: 70px;
-    }
-    .header__img {
-      
-    }
-    .navbar-header{
-      height: 60px;
-    }
-    .header__menu--profile{
+
+ul:hover{
+  color: white;
+  text-decoration: none;
+}
+/*  */
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+@media screen and (max-width: 765px) {  
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.glyphicon, .glyphicon-home  {
+  display: none;
+}
+  table {
+      width:100%;
+  }
+  thead {
       display: none;
-    }
+  }
+  tr:nth-of-type(2n) {
+      background-color: inherit;
+  }
+  tr td:first-child {
+      background: #f0f0f0;
+      font-weight:bold;
+      font-size:1.3em;
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+  }
+  .page-custom{
+    margin-top: 60px;
+    background-color: rgb(245, 245, 245);
+    border: 0px;
+  }  
 }
 @media screen and (max-width: 400px) {
-    
+  
   table {
       width:70%;
   }
