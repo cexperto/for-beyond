@@ -164,52 +164,69 @@
 .navbar-brand {
     padding: 5px 15px;
 }
+.menu_box{
+    display: none;
+}
 </style>
 <link rel="stylesheet" href="./src/css/panel.css">
+<script src="./src/js/panel.js"></script>
 <body>
     <header class="header">    
         <img class="header__img" src="./src/img/Logo-bien.png" alt="">
         <div class="header__menu" style="z-index:2;">
             <div class="header__menu--profile">
-                <img src="./src/img/user-icon.png" alt="User">
-                <p style="color: white";>Cerrar sesión</p>
+                <img src="./src/img/user-icon.png" alt="User" class="user">
+                <img src="./src/img/hamburguer.png" alt="" class="btnMenu" onclick="btnmenu()">
+                <p class="close_sesion">Cerrar sesión</p>
             </div>
-            <!-- <ul>
-                <li><a href="">Cuenta</a></li>
-                <li><a href="">Cerrar sesion</a></li>                
-            </ul> -->
+            <!--  -->
+            
+            <!--  -->
         </div>
     </header>
     
 <div id="wrapper" class="" style="background-color: rgb(245, 245, 245); z-index:1">
+    <div class="menu_box hidden_box" id="menubox">
+        <center>
+        <a href="#"><div class="menu_box--item">Inicio</div></a> 
+        <a href="#"><div class="menu_box--item">Performance</div></a>          
+        <a href="#"><div class="menu_box--item">Beneficios</div></a>       
+        <a href="#"><div class="menu_box--item">Actividades de Bienestar</div></a>
+        <a href="#"><div class="menu_box--item">Planes de Accion</div></a>
+        <a href="#"><div class="menu_box--item">Performance LEAD</div></a>        
+        <a href="#"><div class="menu_box--item">ADN Emprendedor</div></a>       
+        <a href="#"><div class="menu_box--item">PF Sales</div></a>
+    </center>
+    </div>
     <!-- Navigation -->
     <nav class="" role="">    
         
         <ul class="nav navbar-nav side-nav menuNav" style="background-color: white; margin-top: 20px;">
             <!-- <ul class="menuNav nav" style="background-color: white; margin-top: 20px;">                 -->
                 <li class="menuNav">
-                    <a><i><span class="glyphicon glyphicon-home " ></span></i> Inicio </a>                    
+                    <a><i><img src="./src/img/menu/hogar.png" alt="" style="width: 25px;margin: 5px;"></i> Inicio </a>                    
                 </li>
                 <li> 
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> Performance</a>
+                    <a><i><img src="./src/img/menu/speedometer.png" alt="" style="width: 25px;margin: 5px;"></i> Performance</a>
                 </li>
                 <li>
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> Beneficios</a>
+                    <!-- <a><i><span class="glyphicon glyphicon-list"></span></i> Beneficios</a> -->
+                    <a><i><img src="./src/img/menu/win.png" alt="" style="width: 25px;margin: 5px;"></i> Beneficios</a>
                 </li>
                 <li>
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> Actividades de Bienestar</a>
+                    <a><i><img src="./src/img/menu/salud.png" alt="" style="width: 25px;margin: 5px;"></i> Actividades de Bienestar</a>
                 </li>
                 <li>
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> Planes de Accion</a>
+                    <a><i><img src="./src/img/menu/lista-de-verificacion.png" alt="" style="width: 25px;margin: 5px;"></i> Planes de Accion</a>
                 </li>
                 <li>
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> Performance LEAD</a>
+                    <a><i><img src="./src/img/menu/diagrama.png" alt="" style="width: 25px;margin: 5px;"></i> Performance LEAD</a>
                 </li>
                 <li>
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> ADN Emprendedor<i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a><i><img src="./src/img/menu/emprendedor.png" alt="" style="width: 25px;margin: 5px;"></i> ADN Emprendedor<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                 </li>
                 <li>
-                    <a><i><span class="glyphicon glyphicon-list"></span></i> PF Sales<i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a><i><img src="./src/img/menu/ventas.png" alt="" style="width: 25px;margin: 5px;"></i> PF Sales<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                 </li>
                 
            </ul>

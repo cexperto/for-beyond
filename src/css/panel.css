@@ -36,9 +36,9 @@ body {
     color: black;
     text-decoration: none;    
   }
-  .header__menu li a:hover {
+  /* .header__menu li a:hover {
     text-decoration: underline;        
-  }
+  } */
   .header__menu--profile {
     margin-right: 8px;
     display: flex;
@@ -51,7 +51,7 @@ body {
   }
   .header__menu--profile p {
     margin: 0px;
-    color: black;
+    color: white;
   }
   .main{
       height: 300px;
@@ -123,6 +123,12 @@ ul:hover{
 }
 .header__img{
   height: 150px;
+}
+.close_sesion{
+    color: white
+}
+.close_sesion:hover{
+    text-decoration: underline;
 }
 @media screen and (max-width: 765px) { 
   header{
@@ -223,6 +229,9 @@ td, tr{
 .contentProfile{
   margin-top: 40px;
 }
+.menu_box{
+    display: none;
+}
 }
 @media screen and (max-width: 300px) {
   tr{
@@ -232,6 +241,9 @@ td, tr{
     margin: 0px;
     width: 100%;
   }
+  .menu_box{
+    display: none;
+}
 
 }
 @media screen and (max-width: 300px) and (max-width: 1200px) {
@@ -245,24 +257,98 @@ td, tr{
 .header__menu--profile{
 margin-right: 9px;
 }
+.menu_box{
+    display: none;
+}
 }
 @media screen and (max-width: 700px) and (max-height: 1200){
   .header__img {
     width: 40%;    
   }
+  .menu_box{
+    display: none;
+}
 }
 @media screen and (max-width: 1000px) and (max-height: 1080){
   .header__img {
     width: 30%;    
   }
+  .menu_box{
+    display: none;
+}
 }
 @media screen and (max-width: 1500px) and (max-height: 1080){
   .header__img {
     width: 30%;    
   }
+  .menu_box{
+    display: none;
+}
 }
 @media screen and (max-width: 1920px) and (max-height: 1080) {
   .header__img {
     width: 10%;    
   }
 }
+.menu_box{
+    display: none;
+}
+.btnMenu{
+    display: none;
+}
+/*  */
+
+@media screen and (max-width: 768px) and (max-width: 1200px) {
+    nav, .navbar-nav, .side-nav, .user{
+        display: none;
+    }
+    .btnMenu{
+        display: block;
+    }
+    .page-custom{
+        margin-top: 0px; 
+    }
+    .col-sm-12, .col-md-12, .well ,.contentProfile{
+        margin-top: 0px;
+    }
+    .menu_box{
+        border-bottom: 1px rgba(0,0,0,.3) solid;
+    }
+    .menu_box--item{
+        border-top: 1px rgba(0,0,0,.3) solid;
+        padding: 10px;
+        height: 40px;
+        background-color: white;
+        color: #337ab7;
+        cursor: pointer;
+        
+    }
+    .menu_box a{
+        text-decoration: none;
+    }
+    a,.menu_box--item:hover{    
+        background-color: transparent;    
+        color: #33a8ef;
+        text-decoration: none;
+    }    
+    
+}
+@media screen and (max-width: 320px) and (max-width: 1200px) {
+    .close_sesion{
+        display: flex;
+    }
+    .header__menu--profile{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        font-size: 12px;
+      }
+    .btnMenu{
+        width: 28px;
+        height: 30px;
+    }
+    }
