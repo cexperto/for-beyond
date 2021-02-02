@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panel-slider</title>
 </head>
 <body>
     
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+<!--  -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/css/mi-talento.css">
 <style>
     body{
-        overflow-x: hidden
+        overflow-x: hidden;
     }
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 @media(min-width:768px) {
@@ -168,7 +170,7 @@
     display: none;
 }
 </style>
-<link rel="stylesheet" href="./src/css/panel.css">
+<link rel="stylesheet" href="./src/css/panel-slider.css">
 <script src="./src/js/panel.js"></script>
 <body>
     <header class="header">    
@@ -179,23 +181,18 @@
                 <img src="./src/img/hamburguer.png" alt="" class="btnMenu" onclick="btnmenu()">
                 <p class="close_sesion">Cerrar sesión</p>
             </div>
-            <!--  -->
             
-            <!--  -->
         </div>
     </header>
     
 <div id="wrapper" class="" style="background-color: rgb(245, 245, 245); z-index:1">
     <div class="menu_box hidden_box" id="menubox">
         <center>
-        <a href="#"><div class="menu_box--item">Inicio</div></a> 
-        <a href="#"><div class="menu_box--item">Performance</div></a>          
-        <a href="#"><div class="menu_box--item">Beneficios</div></a>       
-        <a href="#"><div class="menu_box--item">Actividades de Bienestar</div></a>
-        <a href="#"><div class="menu_box--item">Planes de Accion</div></a>
-        <a href="#"><div class="menu_box--item">Performance LEAD</div></a>        
-        <a href="#"><div class="menu_box--item">ADN Emprendedor</div></a>       
-        <a href="#"><div class="menu_box--item">PF Sales</div></a>
+        <a href="#"><div class="menu_box--item">Mapa de Equipo</div></a> 
+        <a href="#"><div class="menu_box--item">Lead</div></a>          
+        <a href="#"><div class="menu_box--item">Cultura</div></a>       
+        <a href="#"><div class="menu_box--item">Potencial</div></a>
+        <a href="#"><div class="menu_box--item">Gestion de planes de Accion</div></a>        
     </center>
     </div>
     <!-- Navigation -->
@@ -204,31 +201,21 @@
         <ul class="nav navbar-nav side-nav menuNav" style="background-color: white; margin-top: 20px;">
             <!-- <ul class="menuNav nav" style="background-color: white; margin-top: 20px;">                 -->
                 <li class="menuNav">
-                    <a><i><img src="./src/img/menu/hogar.png" alt="" style="width: 25px;margin: 5px;"></i> Inicio </a>                    
+                    <a><i><img src="./src/img/slider/menu/trabajo-en-equipo.png" alt="" style="width: 25px;margin: 5px;"></i> Mapa de equipo </a>
                 </li>
                 <li> 
-                    <a><i><img src="./src/img/menu/speedometer.png" alt="" style="width: 25px;margin: 5px;"></i> Performance</a>
+                    <a><i><img src="./src/img/slider/menu/leadership.png" alt="" style="width: 25px;margin: 5px;"></i> Lead</a>
                 </li>
                 <li>
                     <!-- <a><i><span class="glyphicon glyphicon-list"></span></i> Beneficios</a> -->
-                    <a><i><img src="./src/img/menu/win.png" alt="" style="width: 25px;margin: 5px;"></i> Beneficios</a>
+                    <a><i><img src="./src/img/slider/menu/mascaras.png" alt="" style="width: 25px;margin: 5px;"></i> Cultura</a>
                 </li>
                 <li>
-                    <a><i><img src="./src/img/menu/salud.png" alt="" style="width: 25px;margin: 5px;"></i> Actividades de Bienestar</a>
+                    <a><i><img src="./src/img/slider/menu/potencial.png" alt="" style="width: 25px;margin: 5px;"></i> Potencial</a>
                 </li>
                 <li>
-                    <a><i><img src="./src/img/menu/lista-de-verificacion.png" alt="" style="width: 25px;margin: 5px;"></i> Planes de Accion</a>
-                </li>
-                <li>
-                    <a><i><img src="./src/img/menu/diagrama.png" alt="" style="width: 25px;margin: 5px;"></i> Performance LEAD</a>
-                </li>
-                <li>
-                    <a><i><img src="./src/img/menu/emprendedor.png" alt="" style="width: 25px;margin: 5px;"></i> ADN Emprendedor<i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                </li>
-                <li>
-                    <a><i><img src="./src/img/menu/ventas.png" alt="" style="width: 25px;margin: 5px;"></i> PF Sales<i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                </li>
-                
+                    <a><i><img src="./src/img/slider/menu/proceso.png" alt="" style="width: 25px;margin: 5px;"></i>Gestion de planes de<br><span style="margin-left: 35px;"> Accion</span></a>
+                </li>                
            </ul>
         
         <!-- /.navbar-collapse -->
@@ -241,32 +228,32 @@
             <div class="row" id="main" >
                 <div class="col-sm-12 col-md-12 well contentProfile" id="content">
                     <div class="row">
-                        <div class="col-md-1">
-                            <center>
-                                <img src="./src/img/user-black.png" alt="" class="iconUser">
-                        </center>
+                        <div class="col-md-12">
+                            <!--  -->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">                                
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./src/img/slider/pexels-olia-danilevich-5088008.jpg" class="d-block w-100" alt="..." height="150">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./src/img/slider/pexels-olia-danilevich-5088022.jpg" class="d-block w-100" alt="..." height="150">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./src/img/slider/pexels-thisisengineering-3862130.jpg" class="d-block w-100" alt="..." height="150">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                            <!--  -->
                         </div>
-                        <div class="col-md-5">
-                            <strong>¡Hola Carla!</strong>
-                            <br>
-                            <br>
-                            this is a example, this is a example, this is a examplethis is a example
-                            this is a example, this is a example, this is a examplethis is a example
-                            <br>
-                            <br>
-                            this is a example,this is a example, this is a examplethis is a example
-                            this is a example,this is a example, this is a examplethis is a example
-                            this is a example,this is a example, this is a examplethis is a example
-                            <br>
-                            <br>
-                            this is a example, this is a example, this is a examplethis is a example
-                            this is a example, this is a example, this is a examplethis is a example
-                            </div>
-                            <div class="col-md-4"><center>
-
-                                <img src="./src/img/evaluacion-de-desempeño.png" alt="" style="width: 70%;margin: 40px 40px;">
-                            </center>
-                            </div>
+                            
                       </div>
                     </div>
                       </div>
@@ -363,5 +350,8 @@
     </div>
     <!-- /#page-wrapper -->
 </div><!-- /#wrapper -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

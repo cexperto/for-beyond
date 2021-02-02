@@ -1,0 +1,31 @@
+body{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;  
+}
+.options{
+    background-color: aquamarine;
+}
+.text{
+    margin: 20px 20px 20px 40px;
+}
+.franja{
+    
+    height: 40px;
+    background-color: rgb(11, 168, 158);
+}
+input{
+    margin-top: 5px;
+    width: 50%;
+    border-radius: 5px;
+}
+.line{
+    height: 15px;    
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+}
+.box{
+    width: 90%;
+    height: 200px;
+    border: 1px solid rgb(11, 168, 158);
+    border-radius: 5px;
+}
