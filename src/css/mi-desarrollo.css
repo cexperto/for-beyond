@@ -187,7 +187,10 @@ ul:hover{
     margin-top: 60px;
     background-color: rgb(245, 245, 245);
     border: 0px;
-  }  
+  }
+  .close_sesion{
+    display: none;
+  }
 }
 @media screen and (max-width: 400px) {
   

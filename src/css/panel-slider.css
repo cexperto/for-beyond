@@ -132,6 +132,9 @@ height: 150px;
 .close_sesion:hover{
   text-decoration: underline;
 }
+.close_sesion{
+  color: white
+}
 @media screen and (max-width: 765px) { 
 header{
   width: 100%;
@@ -178,6 +181,9 @@ tbody td:before {
   margin-top: 60px;
   background-color: rgb(245, 245, 245);
   border: 0px;
+}
+.close_sesion{
+  display: none;
 }  
 }
 @media screen and (max-width: 400px) {

@@ -2,6 +2,9 @@ body{
     font-family: 'Roboto', sans-serif;    
     overflow: hidden;    
 }
+::selection {
+    background: none;
+}
 .box1, .box2, .box3{
     width: 300px;    
     height: 150px;    
@@ -14,6 +17,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     /* background-color: rgb(16, 147, 136); */
+    cursor: pointer;
 }
 .box3{
     margin-top: -25px;
@@ -74,31 +78,121 @@ h3{
 .row{
     margin: 0px;
 }
-@media only screen and (max-width: 360px) and (max-height: 400px){
+
+
+
+
+
+
+@media only screen and (max-width: 1920px) and (max-height: 1170px){
+    .container {        
+        max-width: 1800px;
+    }
+    .row{
+        width: 100%;
+    }
+    .c-view{
+        margin-left: 200px;
+    }
+    
+    .box1,.box2, .box3{
+        width: 70%;
+        
+    }
+    .new{
+        margin-left: 70%;
+    }
+    .c-view{
+        margin-top: 80px;
+    }
+    .animation:hover{
+        width: 71%;
+    }
+    .space2{
+        height: 20px;
+    }
+    
+}
+@media only screen and (max-width: 1600px) and (max-height: 1170px){
+    .container {
+        
+        max-width: 1800px;
+    }
+    .row{
+        width: 100%;
+    }
+    .view{
+        margin-left: -150px;
+    }
+    .box1,.box2, .box3{
+        width: 70%;
+        
+    }
+    .new{
+        margin-left: 70%;
+    }
+    .c-view{
+        margin-top: 80px;
+    }
+    .animation:hover{
+        width: 71%;
+    }
+    
+}
+@media only screen and (max-width: 1100px) and (max-height: 1170px){
+    .c-view, .view{
+        width: 550px;        
+        max-width: 700px;
+    }
+    .animation{
+        width: 200px;
+    }
+    
+    .animation:hover{
+        width: 81%;
+        height: 101px;
+        background-color: none;
+    }
+    .box1, .box2, .box3{
+        width: 80%;
+        height: 100px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 0px;        
+    }
+}
+@media only screen and (max-width: 880px) and (max-height: 1170px){
+    .c-view, .view{
+     display: none; 
+    }
+    
+    .space{
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 550px) and (max-height: 1170px){
     .icon{
         width: 60%;
         margin: 0px;
         margin-left: 20%;
         padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .c-view, .view{
         display: none;
     }
     .box1, .box2, .box3{
-        width: 200px;
-        height: 90px;
+        width: 80%;
+        height: 100px;
         font-size: 18px;
         padding: 10px;
-        margin: 0px;
+        margin: 0px;        
     }
     .box3{
         padding-top: 1px;
         padding-bottom: 1px;
-    }
-    .animation:hover{
-        width: 205px;
-        height: 95px;
-    }
+    }    
     .col-sm{
         width: 100%;
         padding: 0px;
@@ -106,10 +200,15 @@ h3{
     .new{
         width: 25px;
         margin: 0px;
-        margin-left: 70%;
+        margin-left: 80%;
     }
     .space{
         height: 20px;
+    }
+    .animation:hover{
+        width: 81%;
+        height: 101px;
+        background-color: none;
     }
 }
 @media only screen and (max-width: 360px) and (max-height: 700px){
@@ -160,29 +259,31 @@ h3{
         margin: 0px;
     }
 }
-@media only screen and (max-width: 550px) and (max-height: 1170px){
+@media only screen and (max-width: 360px) and (max-height: 500px){
     .icon{
         width: 60%;
         margin: 0px;
         margin-left: 20%;
         padding: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
     .c-view, .view{
         display: none;
     }
     .box1, .box2, .box3{
-        width: 80%;
-        height: 100px;
+        width: 200px;
+        height: 90px;
         font-size: 18px;
         padding: 10px;
-        margin: 0px;        
+        margin: 0px;
     }
     .box3{
         padding-top: 1px;
         padding-bottom: 1px;
-    }    
+    }
+    .animation:hover{
+        width: 212px;
+        height: 100px;        
+    }
     .col-sm{
         width: 100%;
         padding: 0px;
@@ -190,155 +291,9 @@ h3{
     .new{
         width: 25px;
         margin: 0px;
-        margin-left: 80%;
+        margin-left: 70%;
     }
     .space{
         height: 20px;
     }
-    .animation:hover{
-        width: 81%;
-        height: 101px;
-        background-color: none;
-    }
 }
-@media only screen and (max-width: 880px) and (max-height: 1170px){
-    .c-view, .view{
-     display: none; 
-    }
-    
-    .space{
-        height: 20px;
-    }
-}
-@media only screen and (max-width: 1100px) and (max-height: 1170px){
-    .c-view, .view{
-        width: 550px;        
-        max-width: 700px;
-    }
-    .animation{
-        width: 200px;
-    }
-    
-    .animation:hover{
-        width: 81%;
-        height: 101px;
-        background-color: none;
-    }
-    .box1, .box2, .box3{
-        width: 80%;
-        height: 100px;
-        font-size: 18px;
-        padding: 10px;
-        margin: 0px;        
-    }
-}
-@media only screen and (max-width: 1600px) and (max-height: 1170px){
-    .container {
-        
-        max-width: 1800px;
-    }
-    .row{
-        width: 100%;
-    }
-    .view{
-        margin-left: -150px;
-    }
-    .box1,.box2, .box3{
-        width: 70%;
-        
-    }
-    .new{
-        margin-left: 70%;
-    }
-    .c-view{
-        margin-top: 80px;
-    }
-    .animation:hover{
-        width: 71%;
-    }
-    
-}
-@media only screen and (max-width: 1920px) and (max-height: 1170px){
-    .container {        
-        max-width: 1800px;
-    }
-    .row{
-        width: 100%;
-    }
-    .c-view{
-        margin-left: 200px;
-    }
-    
-    .box1,.box2, .box3{
-        width: 70%;
-        
-    }
-    .new{
-        margin-left: 70%;
-    }
-    .c-view{
-        margin-top: 80px;
-    }
-    .animation:hover{
-        width: 71%;
-    }
-    .space2{
-        height: 20px;
-    }
-    
-}
-/* @media only screen and (max-width: 1290px) {
-    .container{
-        margin-top: 100px;
-    }
-}
-@media only screen and (max-width: 800px) {
-    body{        
-        overflow: hidden;
-    }
-    .fondo{
-        display: none;
-    }
-}
-@media only screen and (max-width: 500px) {
-    body{
-        overflow-x: hidden;
-    }
-    .box1, .box2, .box3{
-        width: 250px;
-        height: 100px;
-        margin: 5px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-        font-size: 20px;        
-    }
-    .box3{
-        margin-top: -20px;
-    }
-    .icon{
-        width: 70%;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-    .new{
-        width: 30px;
-        margin-bottom: -15px;
-        margin-left: 280px;
-    }
-    .animation:hover{
-        width: 255px;
-        height: 100px;
-    }
-    .container{
-        margin-top: 15px;
-    }
-    .c-view{
-        display: none;
-    }
-    .move{
-        margin-left: -10px;
-        margin-top: 20px;
-    }
-
-}
- */
