@@ -71,7 +71,7 @@ h3{
     height: 120px;
 }
 .new{
-    width: 50px;      
+    width: 60px;      
     margin-left: 350px;
     margin-top: -50px;
 }
@@ -197,13 +197,12 @@ h3{
         width: 100%;
         padding: 0px;
     }
-    .new{
-        width: 25px;
+    .new{        
         margin: 0px;
         margin-left: 80%;
     }
     .space{
-        height: 20px;
+        height: 60px;
     }
     .animation:hover{
         width: 81%;
@@ -212,11 +211,12 @@ h3{
     }
 }
 @media only screen and (max-width: 360px) and (max-height: 700px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
     .icon{
-        width: 300px;
         margin: 0px;
-        margin-left: 20%;
-        padding: 10px;
     }
     .c-view, .view{
         display: none;
@@ -260,12 +260,7 @@ h3{
     }
 }
 @media only screen and (max-width: 360px) and (max-height: 500px){
-    .icon{
-        width: 60%;
-        margin: 0px;
-        margin-left: 20%;
-        padding: 10px;
-    }
+    
     .c-view, .view{
         display: none;
     }
@@ -289,11 +284,11 @@ h3{
         padding: 0px;
     }
     .new{
-        width: 25px;
+        width: 40px;
         margin: 0px;
         margin-left: 70%;
     }
     .space{
-        height: 20px;
+        height: 40px;
     }
 }
