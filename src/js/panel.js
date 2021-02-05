@@ -1,6 +1,6 @@
 function btnmenu(){
     navegacion = document.getElementById('menubox')
-    console.log(navegacion);
+    //console.log(navegacion);
     
     if(navegacion.style.display == 'block'){
         navegacion.style.display = 'none';

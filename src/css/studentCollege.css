@@ -60,7 +60,7 @@ h3{
 @media only screen and (max-width: 1920px) and (max-height: 1080px){   
     
    .box{
-       width: 70%;       
+       width: 85%;       
        margin: 5px 30px;
    }   
    
@@ -70,6 +70,9 @@ h3{
    .title{
        font-size: 25px;
    }
+   .container {
+    max-width: 1300px;
+}
 }
 @media only screen and (max-width: 550px) and (max-height: 1170px){
     .icon{
@@ -77,11 +80,7 @@ h3{
         margin: 0px;            
     }
 }
-@media only screen and (max-width: 360px) and (max-height: 600px){    
-    .icon{
-        margin:0px 40px;
-    }
-}
+
 
 @media only screen and (max-width: 570px) and (max-height: 600px){
     body{
@@ -128,10 +127,7 @@ h3{
         display: flex;
         justify-content: center;
     }
-    .icon {
-        width: 250px;
-        margin: 0px;
-    }
+    
     .container{
         margin: 0px;
     }
@@ -140,29 +136,16 @@ h3{
     }
     .row{
         margin: 0px;
-    }
-    /* .title{
-        font-size: 20px;
-        margin: 0px;
-        color: gray;
-    } */
-    /* .colegio{
-        font-size: 17px;
-    } */
+    }    
     .box{
         margin-bottom: 30px;
     }
     
 }
+
 @media only screen and (max-width: 360px) and (max-height: 1200px){
-    header{
-        height: 60px;
-    }
-    .icon{
-        width: 40%;
-        height: 40px;        
-        margin-bottom: 0px;
-    }
+    
+    
     .box{
         margin: 20px 0px 20px 0px;
         width: 70%;
@@ -177,13 +160,16 @@ h3{
     }
 
 }
-
+@media only screen and (max-width: 360px) and (max-height: 600px){    
+    .icon{
+        margin:0px;
+    }
+}
  @media only screen and (max-width: 360px) and (max-height: 550px){
     header{
         height: 60px;
     }
-    .icon{
-        width: 40%;        
+    .icon{        
         margin-bottom: 0px;
     }
     .box{
@@ -200,61 +186,3 @@ h3{
 
 }
 
-  /* @media only screen and (max-width: 985px) {
-      body{
-          overflow: hidden;
-      }
-    .box {
-      width: 80%;
-    }      
-    .centerImg {
-        display: none;
-      }
-  }
-  @media only screen and (max-width: 500px) {    
-      .img{
-          width: 80%;
-          margin-left: 40px;
-      }
-      .col-sm{
-         padding-right: 20px;
-      }
-      .hola{
-          width: 80%;                    
-          font-size: 30px;
-          margin-bottom: 5px;
-
-      }
-    .box{
-        width: 40%;
-        padding: 0px;        
-      }
-      .row{
-          margin-top: 1px;
-      }
-      .icon{
-          width: 60%;
-      }
-      .container{
-          height: 50px;
-      }
-    }
-@media only screen and (max-width: 1800px) {
- .container{
-     margin-top: -50px;
- }   
-}
-@media only screen and (max-width: 500px) {
-    .box{
-        width: 90%;
-        margin-left: 15px;
-        overflow: hidden;            
-        }
-        .space{
-        height: 40px;
-        }
-        .hola{
-            margin-bottom: 40px;
-        }        
-        
-} */
