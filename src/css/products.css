@@ -82,7 +82,8 @@ h3{
         overflow: hidden;
     }
     .icon{
-        width: 250px; 
+        width: 65%;
+        height: auto;
         margin: 0px;            
     }
     .description{
