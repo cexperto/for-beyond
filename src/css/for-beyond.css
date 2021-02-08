@@ -34,11 +34,7 @@ h3{
     font-weight: bold;
     color: rgb(70, 90, 96);
 }
-.icon{    
-    width: 400px;
-    margin-right: 400px;
-    padding: 15px 20px;
-}
+
 .container{
     max-width: 1700px;
 }
@@ -57,22 +53,25 @@ span{
         max-width: 1740px;
     }
     .space{
-        height: 100px;
+        height: 190px;
     }
     .space2{
-        height: 10px;
+        height: 50px;
     }
     .icon{
-        margin: 60px 0px 0px 150px;        
-        width: 40%;
+        margin: 25px 0px 0px 150px;        
+        height: 150px;
     }
     .row{
         margin-top: 0px;
     }
     .box{
-        width: 70%;
-        
+        width: 60%;
+        margin-right: 150px;
     }
+    span{
+        font-size: 45px
+    };
 }
 @media only screen and (max-width: 1800px) and (max-height: 1170px){
     .icon{
@@ -219,6 +218,12 @@ span{
     .box{
         width: 100%;
         height: auto;
+    }
+    .space2{
+        display: none;
+    }
+    .text{
+        padding-bottom: 0px;
     }
 }
 @media only screen and (max-width: 330px) and (max-height: 600px){    

@@ -55,15 +55,7 @@ h3{
     align-items: center; 
     justify-content: center;    
 }
-/* .animation:hover{
-    width: 305px;
-    height: 155px;
-} */
-/* .container{
-    display: flex;
-    align-items: center;  
-    justify-content: space-between;
-} */
+
 .s{
     height: 120px;
 }
@@ -96,9 +88,12 @@ h3{
     .c-view{
         margin-top: 80px;
     }
-    /* .imgBox:hover{
-        width: 68%;
-    } */
+    .imgBox{
+        width: 60%;
+    }
+    .imgBox:hover{
+        width: 65%;
+    }
     
     .space2{
         height: 20px;
@@ -111,7 +106,7 @@ h3{
     }
     .container {
         
-        max-width: 1800px;
+        max-width: 1800px
     }
     .row{
         width: 100%;
