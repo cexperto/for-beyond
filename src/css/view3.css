@@ -1,6 +1,12 @@
 body{
     font-family: 'Roboto', sans-serif;    
-    overflow: hidden;    
+    background-image: url('../img/Nueva-3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    overflow-y:hidden!important;
+    overflow-x:hidden!important;   
 }
 ::selection {
     background: none;
@@ -171,6 +177,9 @@ h3{
     }
 }
 @media only screen and (max-width: 550px) and (max-height: 1170px){
+    body{
+        background-image: none;
+    }
     .icon{
         width: 60%;
         margin: 0px;

@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;  
-    background-image: url('../img/for-beyond/Fond.jpg');
+    background-image: url('../img/for-beyond/for.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -39,28 +39,49 @@ h3{
     margin-right: 400px;
     padding: 15px 20px;
 }
-.row{
-    margin-top: 70px;
+.container{
+    max-width: 1700px;
 }
 .space{
     height: 80px;
 }
-
+span{
+    font-size: 35px;
+    color: white;
+}
+.text{
+    display: none;
+}
 @media only screen and (max-width: 1920px) and (max-height: 1170px){   
     .container{
         max-width: 1740px;
+    }
+    .space{
+        height: 100px;
     }
     .space2{
         height: 10px;
     }
     .icon{
-        margin: 40px 0px 0px 150px;
-        padding: 15px 20px;
+        margin: 60px 0px 0px 150px;        
+        width: 40%;
     }
     .row{
         margin-top: 0px;
     }
+    .box{
+        width: 70%;
+        
+    }
 }
+@media only screen and (max-width: 1800px) and (max-height: 1170px){
+    .icon{
+        width: 35%;
+        margin: 10px 0px 0px 150px;
+    }
+}   
+
+
 @media only screen and (max-width: 1400px) and (max-height: 1170px){
     .img2{
         width: 100%;
@@ -71,11 +92,17 @@ h3{
     .icon {
         margin: 40px 0px 0px 30px;
     }           
+    
 
+}
+@media only screen and (max-width: 1400px) and (max-height: 800px){
+    .icon{
+        margin-top: 0px;
+    }
 }    
-@media only screen and (max-width: 1100px) and (max-height: 1170px){    
-    .centerImg{
-        display: none;
+@media only screen and (max-width: 1100px) and (max-height: 1170px){        
+    body{
+        background-position: left;
     }
     .container{
         max-width: 820px;
@@ -84,19 +111,28 @@ h3{
         margin-top: 20px 0px;
     }
     .box{
-        margin: 0px 10px;
+        margin: 10px 10px;
+        width: 90%;
     }
     .col-hidden{
         display: none;
     }
+    .text{
+        display: block;
+        font-size: 35px;
+        color: white;
+        margin: 40px 0px;
+        padding: 10px;
+    }
 }
 @media only screen and (max-width: 550px) and (max-height: 1170px){
-    body{
-        
+    body{        
         overflow: hidden;
+        background-position: left;
     }
     .icon{
         width: 70%;
+        height: auto;
         margin: 10px 0px 0px 0px;            
     }    
     .space{
@@ -105,11 +141,10 @@ h3{
     .row{
         margin-top: 10px;
         max-height: 400px;
-    }
-    .centerImg{
-        display: none;
-    }
+    }    
     .box{
+        width: 90%;
+        height: auto;
         margin: 10px;
     }    
     header{
@@ -117,16 +152,88 @@ h3{
         display: flex;
         justify-content: center;
     }
+    .text{
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+        margin-top: 0px;
+    }
 
 }
-
-@media only screen and (max-width: 360px) and (max-height: 600px){        
+@media only screen and (max-width: 390px) and (max-height: 1200px){
     .icon{
-        margin:0px 40px;
+        width: 70%;
+        height: auto;
+    }
+    .text{
+        font-size: 25px;
+    }
+    .box{
+        width: 90%;
+        height: auto;
+    }
+
+}
+@media only screen and (max-width: 360px) and (max-height: 1200px){
+    header{
+        display: flex;
+        justify-content: center;
+    }        
+    body{
+        background-position: left;
+    }    
+    .text{
+        display: block;
+        font-size: 20px;
+        color: white;
+
+    }
+    .col-hidden{
+        display: none;        
+    }
+    .icon{
+        width: 70%;
+        height: auto;
+        margin: 20px 0px;
+        padding: 0px;
+    }
+    .space{
+        display: none;
+    }
+    .row{
+        margin: 0px;
+    }
+    .box{
+        width: 90%;
+        height: auto;
+        margin: 30px 0px;
     }
 }
-@media only screen and (max-width: 330px) and (max-height: 490px){    
-    .line{
-        margin-bottom: 50px;
-    }    
+@media only screen and (max-width: 330px) and (max-height: 1200px){    
+    .icon{
+        width: 70%;
+        height: auto;
+        margin: 20px 0px;
+        padding: 0px;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 330px) and (max-height: 600px){    
+    .icon{
+        width: 70%;
+        height: auto;
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+        margin: 15px 0px;
+    }
+    .text{
+        margin: 10px 0px;
+    }
 }
