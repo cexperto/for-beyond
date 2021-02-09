@@ -84,13 +84,13 @@ strong{
 @media only screen and (max-width: 1800px) and (max-height: 1170px){
     .icon{
     
-        margin: 10px 0px 0px 150px;
+        margin: 10px 0px 0px 50px;
     }    
     .space2{
         height: 10px;
     }
     .col-sm{
-        margin-top: 100px;
+        margin-top: 0px;
     }
     .col-hidden{
         margin-top: 0px;
@@ -202,46 +202,6 @@ strong{
         margin: 10px 0px 0px 0px;
     }
 }
-/* @media only screen and (max-width: 550px) and (max-height: 1170px){
-    body{        
-        overflow: hidden;
-        background-position: left;
-    }
-    .icon{
-        height: 10px;
-        margin-top: 10px;         
-    }    
-    .space{
-        height: 0px;
-    }
-    .row{
-        margin-top: 10px;
-        max-height: 400px;
-    }    
-    .box{
-        width: 90%;
-        height: auto;
-        margin: 10px;
-    }    
-    header{
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    .text{
-        font-size: 30px;
-        color: white;
-        padding: 10px;
-        margin-top: 0px;
-    }
-    .col-sm{
-        margin-top: 0px;
-    }
-    .h{
-        display: none;
-    }
-
-} */
 
 @media only screen and (max-width: 550px) and (max-height: 1200px){
     header{
