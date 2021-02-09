@@ -163,7 +163,7 @@ strong{
     }    
 
 }
-@media only screen and (max-width: 1100px) and (max-height: 1170px){        
+@media only screen and (max-width: 1200px) and (max-height: 1170px){        
     header{
         display: flex;
         justify-content: center;
