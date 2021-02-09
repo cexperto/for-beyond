@@ -101,7 +101,7 @@ strong{
     }
     .h{
         margin-bottom: 0px;
-    }
+    }    
 }   
 
 
@@ -160,7 +160,7 @@ strong{
     }
     .text, strong{
         font-size: 40px;
-    }
+    }    
 
 }
 @media only screen and (max-width: 1100px) and (max-height: 1170px){        
@@ -291,4 +291,16 @@ strong{
     .text{
         margin-top: 0px;
     }
+    
+}
+@media only screen and (max-width: 330px) and (max-height: 500px){
+    .text, strong{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .box{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
 }

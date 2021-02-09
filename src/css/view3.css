@@ -120,6 +120,9 @@ h3{
     
 }
 @media only screen and (max-width: 1600px) and (max-height: 1170px){
+    .icon{
+        height: 200px;
+    }
     .container {
         
         max-width: 1800px;
@@ -146,6 +149,9 @@ h3{
     
 }
 @media only screen and (max-width: 1100px) and (max-height: 1170px){
+    .icon{
+        height: 150px;
+    }
     .c-view, .view{
         width: 550px;        
         max-width: 700px;
@@ -165,6 +171,9 @@ h3{
         font-size: 18px;
         padding: 10px;
         margin: 0px;        
+    }
+    .box1{
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 880px) and (max-height: 1170px){
@@ -219,12 +228,14 @@ h3{
         background-color: none;
     }
 }
-@media only screen and (max-width: 360px) and (max-height: 700px){
+@media only screen and (max-width: 360px) and (max-height: 1200px){
     header{
         display: flex;
         justify-content: center;
     }
     .icon{
+        width: auto;
+        height: 75px;
         margin: 0px;
     }
     .c-view, .view{
@@ -242,7 +253,7 @@ h3{
         padding-bottom: 1px;
     }
     .animation:hover{
-        width: 205px;
+        width: 290px;
         height: 95px;
     }
     .col-sm{
@@ -269,7 +280,10 @@ h3{
     }
 }
 @media only screen and (max-width: 360px) and (max-height: 500px){
-    
+    .icon{
+        width: auto;
+        height: 75px;
+    }
     .c-view, .view{
         display: none;
     }
