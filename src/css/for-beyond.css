@@ -51,6 +51,9 @@ span{
 .text{
     display: none;
 }
+strong{
+    color: white;
+}
 @media only screen and (max-width: 1920px) and (max-height: 1170px){   
     .container{
         max-width: 1740px;
@@ -72,9 +75,9 @@ span{
         width: 60%;
         margin-right: 150px;
     }
-    strong ,span{     
+    strong ,span{  
         font-size: 45px;
-        margin: 130px;
+        margin: 130px 130px 0px 130px;
         color: white
     };
 }
@@ -92,12 +95,45 @@ span{
     .col-hidden{
         margin-top: 0px;
     }
-    strong, span{
+    strong, span {
         font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .h{
+        margin-bottom: 0px;
     }
 }   
 
 
+@media only screen and (max-width: 1500px) and (max-height: 1200px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .icon{
+        height: 150px;
+        margin: 10px 0px;        
+    }
+    .space, .h,.col-hidden{
+        display: none;
+    }
+    
+    .col-sm{
+        margin-top: 0px;
+    }
+    .text{
+        display: block;
+        font-size: 35px;
+        color: white;
+        margin: 40px 0px;
+        padding: 10px;
+    }
+    .box{
+        margin: 20px 0px;
+
+    }
+    
+}    
 @media only screen and (max-width: 1400px) and (max-height: 1170px){
     .img2{
         width: 100%;
@@ -108,22 +144,25 @@ span{
     .icon {
         margin: 40px 0px 0px 30px;
     }           
-    span{
-        padding-right: 30px;
+    strong, span {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .h{
+        margin-bottom: 0px;
+        
+    }
+    strong{
+        margin-bottom: 0px;
+    }
+    .box{
+        margin: 20px 0px;
+    }
+    .text, strong{
+        font-size: 40px;
     }
 
 }
-@media only screen and (max-width: 1500px) and (max-height: 1200px){
-    .icon{
-        margin-top: 10px;        
-    }
-    .space{
-        display: none;
-    }
-    .col-sm{
-        margin-top: 0px;
-    }
-}    
 @media only screen and (max-width: 1100px) and (max-height: 1170px){        
     header{
         display: flex;
@@ -159,6 +198,7 @@ span{
         margin-top: 0px;
     }
     .icon{
+        height: 80px;
         margin: 10px 0px 0px 0px;
     }
 }
@@ -213,9 +253,9 @@ span{
     }    
     .text{
         display: block;
-        font-size: 20px;
+        font-size: 30px;
         color: white;
-        margin-bottom: 0px;
+        margin: 30px 0px;
     }
     .col-hidden, .h{
         display: none;        
@@ -243,47 +283,52 @@ span{
     strong{
         color: white;
         font-size: 25px;
+        margin: 0px;
     }
 }
 @media only screen and (max-width: 330px) and (max-height: 1200px){    
     .icon{        
-        height: 60px;        
+        height: 50px;        
         padding: 0px;
         margin: 10px 0px;
     }
     .box{
         width: 100%;
         height: auto;
-        margin: 30px 0px;
+        margin: 50px 0px;
     }
     .space2, .h{
         display: none;
     }
     .text{
-        font-size: 20px;
+        font-size: 25px;
         padding-bottom: 0px;
+        margin: 20px 0px;
     }
     strong{
         color: white;
         font-size: 25px;
+        margin:0px;
     }
 }
 @media only screen and (max-width: 330px) and (max-height: 600px){    
     .icon{        
-        height: 50px;
-        margin: 20px 0px 0px 0px;
+        height: 50px;        
         padding: 0px;
     }
     .box{
         width: 100%;
         height: auto;
-        margin: 20px 0px;
+        margin: 30px 0px;
     }
     strong{
         font-size: 25px;
+        margin:0px;
     }
     strong, span{
     margin: 0px;
     }
-    
+    .text{
+        margin-top: 0px;
+    }
 }
