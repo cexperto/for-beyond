@@ -1,10 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;    
-    /* background-image: url('../img/Nueva-3.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;     */
+    font-family: 'Roboto', sans-serif;        
     overflow-y:hidden!important;
     overflow-x:hidden!important;   
 }
@@ -12,19 +7,33 @@ body{
     background: none;
 }
 .box1, .box2, .box3{
+    width: 300px;
+    height: 110px;
+    margin: 30px 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 60px;
+    /* background-color: rgb(35, 93, 251); */
+    border: rgb(254, 254, 254) solid 5px;
+    box-shadow: 0px 0px 0px 7px rgb(234, 234, 234);
+    cursor: pointer;
+    background: rgb(255,255,255);
+    background: linear-gradient(117deg, rgba(255,255,255,1) 0%, rgba(5,154,230,1) 0%, rgba(36,91,253,1) 100%);
+}
+ /* .box1, .box2, .box3{
     width: 300px;    
     height: 150px;    
     margin: 30px 10px;
     padding: 15px;
     border-radius: 15px;
-    /* border: 2px solid rgb(122, 176, 240); */
     background-image: url('../img/Boton-1.png');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    /* background-color: rgb(16, 147, 136); */
-    cursor: pointer;
-}
+    background-repeat: no-repeat;    
+    
+} */
 .box3{
     margin-top: -25px;
 }
@@ -53,14 +62,10 @@ h3{
     display: flex;
     align-items: center; 
     justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;    
+    font-size: 30px;    
 }
-.animation:hover{
-    /* background-color:rgb(134 , 231, 238) ; */
-    width: 305px;
-    height: 155px;
+.animation:hover{    
+    width: 305px;    
 }
 /* .container{
     display: flex;
@@ -99,16 +104,18 @@ h3{
     
     
     .box1,.box2, .box3{
-        width: 60%;        
+        width: 60%;
+         
     }
     .new{
-        margin-left: 70%;
+        margin-left: 65%;
     }
     .c-view{
         margin-top: -80px;
     }
     .animation:hover{
         width: 63%;
+        font-size: 33px;
     }
     .space2{
         height: 20px;
@@ -116,6 +123,12 @@ h3{
     .nueva{
         margin: 60px 0px 0px 10px;
         width: 90%;
+    }
+    .space{
+        height: 10px;
+    }
+    .space3{
+        height: 40px;
     }
     
 }
@@ -150,7 +163,7 @@ h3{
 }
 @media only screen and (max-width: 1100px) and (max-height: 1170px){
     .icon{
-        height: 150px;
+        height: 130px;
     }
     .c-view, .view{
         width: 550px;        
@@ -158,31 +171,42 @@ h3{
     }
     .animation{
         width: 200px;
+        font-size: 30px;
     }
     
     .animation:hover{
         width: 81%;
-        height: 101px;
-        background-color: none;
+        height: 101px;        
     }
     .box1, .box2, .box3{
         width: 80%;
         height: 100px;
-        font-size: 18px;
+        font-size: 30px;
         padding: 10px;
         margin: 0px;        
     }
     .box1{
         margin-bottom: 30px;
     }
+    .space{
+        height: 30px;
+    }
 }
 @media only screen and (max-width: 880px) and (max-height: 1170px){
+    header{
+        display: flex;
+        justify-content: center;        
+    }
+    .icon{
+        margin: 20px 0px;
+        height: 150px;
+    }
     .c-view, .view{
      display: none; 
     }
     
     .space{
-        height: 20px;
+        height: 30px;
     }
 }
 @media only screen and (max-width: 550px) and (max-height: 1170px){
@@ -194,10 +218,10 @@ h3{
         background-image: none;
     }
     .icon{
-        height: 80px;
+        height: 70px;
         margin: 0px;                
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .c-view, .view{
         display: none;
@@ -205,7 +229,7 @@ h3{
     .box1, .box2, .box3{
         width: 80%;
         height: 100px;
-        font-size: 18px;
+        font-size: 20px;
         padding: 10px;
         margin: 0px;        
     }
@@ -224,10 +248,13 @@ h3{
     .space{
         height: 60px;
     }
+    .space3{
+        display: none;
+    }
     .animation:hover{
         width: 81%;
         height: 101px;
-        background-color: none;
+        font-size: 22px;
     }
     .container{
         margin-top: 0px;
@@ -238,8 +265,7 @@ h3{
         display: flex;
         justify-content: center;
     }
-    .icon{
-        width: auto;
+    .icon{        
         height: 50px;
         margin-top: 10px;
     }
@@ -252,61 +278,15 @@ h3{
         font-size: 18px;
         padding: 10px;
         margin: 0px;
+        border: 5px;
     }
     .box3{
         padding-top: 1px;
         padding-bottom: 1px;
     }
     .animation:hover{
-        width: 290px;
-        height: 95px;
-    }
-    .col-sm{
-        width: 100%;
-        padding: 0px;
-    }
-    .new{
-        width: 25px;
-        margin: 0px;
-        margin-left: 70%;
-    }
-    .space{
-        height: 20px;
-    }
-    .col-sm{
-        width: 100%;
-    }
-    .container{
-        margin: 0px;
-        max-width: 360px;
-    }
-    .row{
-        margin: 0px;
-    }
-}
-@media only screen and (max-width: 360px) and (max-height: 500px){
-    .icon{
-        width: auto;
-        height: 50px;
-        margin-top: 10px;
-    }
-    .c-view, .view{
-        display: none;
-    }
-    .box1, .box2, .box3{
-        width: 200px;
+        width: 85%;
         height: 90px;
-        font-size: 18px;
-        padding: 10px;
-        margin: 0px;
-    }
-    .box3{
-        padding-top: 1px;
-        padding-bottom: 1px;
-    }
-    .animation:hover{
-        width: 212px;
-        height: 100px;        
     }
     .col-sm{
         width: 100%;
@@ -318,6 +298,56 @@ h3{
         margin-left: 70%;
     }
     .space{
+        height: 40px;
+    }
+    .col-sm{
+        width: 100%;
+    }
+    .container{
+        margin: 0px;
+        max-width: 360px;
+    }
+    .row{
+        margin: 0px;
+    }
+    .space3{
+        display: block;
+        height: 10px;
+    }
+}
+@media only screen and (max-width: 360px) and (max-height: 500px){
+    .icon{        
+        height: 50px;
+        margin: 10px 0px; 
+    }
+    .c-view, .view{
+        display: none;
+    }
+    .animation{        
+        width: 90%;
+        font-size: 15px;
+        padding: 5px;
+        margin: 0px;
+    }
+    .box3{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .animation:hover{
+        width: 95%;
+        height: 90px;
+        font-size: 20px;  
+    }
+    .col-sm{
+        width: 100%;
+        padding: 0px;
+    }
+    .new{
+        width: 30px;
+        margin: 0px;
+        margin-left: 70%;
+    }
+    .space2{
         height: 30px;
     }
 }
