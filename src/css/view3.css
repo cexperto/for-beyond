@@ -133,11 +133,14 @@ h3{
     
 }
 @media only screen and (max-width: 1600px) and (max-height: 1170px){
+    body{
+        overflow-y: auto;
+    }
     .icon{
         height: 200px;
     }
     .container {
-        
+        margin-top: 0px;
         max-width: 1800px;
     }
     .row{
@@ -153,8 +156,11 @@ h3{
     .new{
         margin-left: 70%;
     }
-    .c-view{
-     
+    .animation{
+     margin-bottom: 0px;
+    }
+    .box1{
+        margin-top: 0px;
     }
     .animation:hover{
         width: 71%;
