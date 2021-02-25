@@ -1,0 +1,146 @@
+body{
+    font-family: 'Roboto', sans-serif;  
+    background-image: url('../img/Colegio-universidad.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    overflow-y:hidden!important;
+    overflow-x:hidden!important;
+}
+
+.box{        
+    padding: 20px;    
+    background-color: rgb(234, 234, 234);
+    margin: 20px 50px;
+    border-radius: 5px;
+    border: 2px solid #33a8ef;
+    box-shadow: 3px 3px 3px 3px #666666;
+}
+
+.box:hover{
+    background-color: rgb(210, 210, 210);
+    
+}
+.img{
+    width: 80%;    
+}
+strong{
+    color: rgb(0, 123, 253);
+    font-size: 30px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(70, 90, 96);
+}
+
+.description{
+    font-size: 40px;
+    color: rgb(69, 158, 209);
+}
+.icon{    
+    width: 400px;
+    margin-right: 400px;
+    padding: 15px 20px;
+}
+.row{
+    margin-top: 70px;
+}
+.space{
+    height: 80px;
+}
+
+@media only screen and (max-width: 1920px) and (max-height: 1170px){
+    .description{
+        font-size: 30px;
+    }
+    .container{
+        max-width: 1440px;
+    }
+}
+@media only screen and (max-width: 1100px) and (max-height: 1170px){
+    .description{
+        font-size: 25px;
+    }
+    .centerImg{
+        display: none;
+    }
+    .container{
+        max-width: 820px;
+    }
+    .row{
+        margin-top: 20px 0px;
+    }
+    .box{
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width: 550px) and (max-height: 1170px){
+    body{
+        background-image: none;
+        overflow: hidden;
+    }
+    .icon{
+        width: 65%;
+        height: auto;
+        margin: 0px;            
+    }
+    .description{
+        font-size: 20px;
+    }
+    .space{
+        height: 0px;
+    }
+    .row{
+        margin-top: 10px;
+        max-height: 400px;
+    }
+    .centerImg{
+        display: none;
+    }
+    .box{
+        margin: 10px;
+    }
+    .line{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    header{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 330px) and (max-height: 1170px){
+    .description{
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .line{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 360px) and (max-height: 600px){    
+    .description{
+        font-size: 17px;
+        margin: 5px 0px;
+    }
+    .icon{
+        margin:0px 40px;
+    }
+}
+@media only screen and (max-width: 330px) and (max-height: 490px){
+    .description{
+        font-size: 17px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .line{
+        margin-bottom: 50px;
+    }    
+}

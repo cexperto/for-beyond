@@ -1,0 +1,220 @@
+html, body{
+    height:100%;
+    margin:0;    
+}
+.containerL{
+height:100%;
+width: 100%;    
+display: flex;
+}
+.container2{      
+    height: 100%;      
+    width: 60%;
+    margin: 0px;
+}
+.container3{
+    height: 100%;    
+}
+.carousel-item__img{
+    height: 100%;    
+    object-fit: cover;
+}
+.between{
+height: 40px;
+}
+.flag{
+    width: 45px;
+    height: 45px;
+}
+
+@media only screen and (max-width: 2000px) and (max-height: 1300px){
+    .container2{
+        width: 55%;
+    }
+    .container3{
+        padding: 30px 100px;
+    }
+    .blanco{
+        width: 10px;
+    }
+    .icon{
+        width: 50%;
+    }
+    .description{
+        font-size: 30px;
+    }
+    .forget{
+        font-size: 20px;
+    }
+    input, button{
+        height: 60px;        
+    }
+    .key{
+        width: 20px;
+    }
+    .title{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 2000px) and (max-height: 600px){
+    .icon{
+        width: auto;
+        height: 90px;
+    }
+    .description{
+        font-size: 25px;
+    }
+    .container3{
+        margin: auto;
+    }
+    .container2{
+        width: auto;
+    }
+    .between{
+        height: 20px;
+    }
+    .forget{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 1750px){
+    .container2{
+        display: none;
+    }
+    .icon{
+        width: auto;
+        height: 140px;
+    }
+    .container3{
+        width: 80%;
+        margin: auto;
+        padding-top: 10px;
+    }
+    .title{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 1300px){    
+    .container3 {
+        padding: 5px;
+        width: 80%;
+        margin: auto;
+    }
+    .icon {
+        width: auto;
+        height: 80px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .forget {
+        font-size: 15px;
+    }
+    .title{
+        margin: 20px 0px;
+    }
+    .container2{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1100px) and (max-height: 1200px){
+    .title{
+        margin-top: 0px;
+        padding: 5px;
+    }
+    .container2{
+        display: none;
+    }
+    .container3{        
+        width: 100%;        
+        padding: 5px;
+        margin-top: 0px;
+    }
+    .flags{
+        width: 100%;
+    }
+    .icon{
+        width: auto;
+        height: 80px;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    
+    .description{
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+    .between{
+        height: 40px;
+    }  
+    .forget{
+        margin-top: 5px;
+        height: 20px;
+    }
+    .blanco{
+        width: 5px;
+    }
+    .custom-control{
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+    .flags{
+        margin-top: 30px;
+    }
+} 
+@media only screen and (max-width: 550px) and (max-height: 1170px){    
+    .container2{
+        display: none;
+    }
+    .icon{
+        margin-top: 40px;
+        height: 50px;
+    }
+    .container3{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .custom-control{
+        padding-left: 0px;
+        
+    }
+    .title{
+        margin-top: 0px;
+    }
+    .icon{
+        margin-top: 10px;
+    }
+    .description{
+        font-size: 20px;
+    }
+    }
+@media only screen and (max-width: 360px) and (max-height: 550px){
+    .icon{
+        width: auto;
+        height: 40px;
+    }
+    .description{
+        font-size: 15px;
+        padding-bottom: 0px; 
+    }
+    .description2{
+        padding-bottom: 0px;
+    }
+    .between{
+        height: 10px;
+    }
+    
+    .forget{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .flags{
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 360px) and (max-height: 400px){
+    .custom-control, .flags{
+        margin-top: 5px;
+    }
+}
