@@ -251,31 +251,29 @@
                     <a><i><img src="./src/img/menu/hogar.png" alt="" style="width: 25px;margin: 5px;"></i> Inicio </a>                    
                 </li>                
                 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar"></ul>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="informacion()">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-fw fa-cog"></i>
                         <img src="./src/img/panel-eclipse/info.png" alt="" style="width: 25px;margin: 5px;">Información
                         </a>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                            <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/bulk_load">Carga masiva</a>
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/attributes">Consulta atributos</a>
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/update_user">Actualizar usuario</a>
-                            </div>
+                        <div class="item-hidden" id="item-hiddeni">
+                            <a href="#"><div class="menu_box--item i">  Carga masiva</div></a>                
+                            <a href="#"><div class="menu_box--item i">  Consulta atributos</div></a>                
+                            <a href="#"><div class="menu_box--item i">  Actualizar usuario</div></a>                
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="informes()">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-fw fa-cog"></i>
                         <img src="./src/img/panel-eclipse/file.png" alt="" style="width: 25px;margin: 5px;"> Informes
                         </a>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
-                            <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/reports">Individual</a>
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/general_team">General y equipo</a>
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/general_evaluation">Evaluaciones</a>
-                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/general_ranking">Ranking</a>
-                            </div>
+                            <div class="item-hidden" id="item-hiddenin">
+                                <a href="#"><div class="menu_box--item i">  Individual</div></a>                
+                                <a href="#"><div class="menu_box--item i">  General y equipo</div></a>                
+                                <a href="#"><div class="menu_box--item i">  Evaluaciones</div></a>                
+                                <a href="#"><div class="menu_box--item i">  Ranking</div></a>                
+                            </div>                            
                         </div>
                     </li>
                 </ul>

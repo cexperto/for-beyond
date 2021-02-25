@@ -18,3 +18,23 @@ function eclipsev2(){
             navegacion2.style.display = 'block';
         }
     }
+function informacion(){
+        navegacion3 = document.getElementById('item-hiddeni')
+        //console.log(navegacion);
+
+        if(navegacion3.style.display == 'block'){
+                navegacion3.style.display = 'none';
+        }else{
+                navegacion3.style.display = 'block';
+        }
+}
+function informes(){
+        navegacion3 = document.getElementById('item-hiddenin')
+        //console.log(navegacion);
+
+        if(navegacion3.style.display == 'block'){
+                navegacion3.style.display = 'none';
+        }else{
+                navegacion3.style.display = 'block';
+        }
+}
