@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel-eclipse</title>
+</head>
+<body>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://18.233.25.142/evaluaciones/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="http://18.233.25.142/evaluaciones/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/eclipse.js"></script>
+<style>
+    body{
+        overflow-x: hidden;        
+    }
+    
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@media(min-width:770px) {
+    body {
+        margin-top: 50px;
+    }
+    /*html, body, #wrapper, #page-wrapper {height: 100%; overflow: hidden;}*/
+}
+
+#wrapper {
+    padding-left: 0;    
+}
+
+#page-wrapper {
+    width: 100%;        
+    padding: 0;
+    background-color: #fff;
+}
+
+@media(min-width:770px) {
+    
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 22px 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #1a242f;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    /*border: 1px solid rgba(0,0,0,.15);*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+/* Side Navigation */
+@media only screen and (device-width: 768px) {
+  
+}
+
+@media(min-width:770px) {      
+    .side-nav {
+        position: fixed;
+        top: 60px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        border-top: 1px rgba(0,0,0,.5) solid;
+        overflow-y: auto;
+        background-color: #222;
+        /*background-color: #5A6B7D;*/
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+        
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+        border-bottom: 1px rgba(0,0,0,.3) solid;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: rgb(231, 237, 246) !important;
+        color: #33a8ef;
+    }
+    
+}
+
+.side-nav>li>ul {
+    padding: 0;
+    border-bottom: 1px rgba(204, 28, 28, 0.3) solid;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    /*color: #999;*/
+    color: #fff;
+    text-align: center;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.navbar .nav > li > a > .label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  font-size: 10px;
+  font-weight: normal;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 1.0em;
+  text-align: center;
+  padding: 2px;
+}
+
+.navbar .nav > li > a:hover > .label {
+  top: 10px;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+.menu_box{
+    display: none;
+}
+.collapse-item:hover{
+    list-style: none !important;
+}
+</style>
+<link rel="stylesheet" href="./src/css/panel.css">
+<link rel="stylesheet" href="./src/css/panel-eclipse.css">
+<script src="./src/js/panel.js"></script>
+<body>
+    <header class="header">    
+        <img class="header__img" src="./src/img/icon/Logo-bien.png" alt="">
+        <div class="header__menu" style="z-index:2;">
+            <div class="header__menu--profile">                
+                <img src="./src/img/panels/hamburguer.png" alt="" class="btnMenu" onclick="btnmenu()">
+                <!--  -->
+                <li class="nav-item dropdown no-arrow" style="list-style-type: none; font-size: 20px; color: white;">
+                    <a class="nav-link dropdown-toggle"  href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="color: white;">Administrador</span>
+                        <!-- <p class="close_sesion">Administrador</p> -->
+                    
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        <img src="./src/img/panel-eclipse/user.png" alt="" style="width: 15px;"> Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="./src/img/panel-eclipse/settings.png" alt="" style="width: 15px;"> Settings
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="./src/img/panel-eclipse/petition.png" alt="" style="width: 15px;"> Activity Log
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="http://18.233.25.142/evaluaciones/admin/logout_admin" data-toggle="modal" data-target="#logoutModal">
+                        <img src="./src/img/panel-eclipse/logout.png" alt="" style="width: 15px;"> Logout
+                    </a>
+                    </div>
+                </li>
+        
+                <!--  -->
+            </div>
+            
+        </div>
+        
+            
+    </header>
+    
+<div id="wrapper" class="" style="background-color: rgb(245, 245, 245); z-index:1">
+    <div class="menu_box hidden_box" id="menubox">
+        <center>
+        <a href="#"><div class="menu_box--item"> <img src="./src/img/menu/hogar.png" alt="" style="width: 15px; margin-bottom: 5px;"> Inicio</div></a>
+        <a href="#" onclick="eclipse()"><div class="menu_box--item"> <img src="./src/img/panel-eclipse/info.png" alt="" style="width: 15px; margin-bottom: 5px;"> Informacion</div></a>
+            <div class="item-hidden" id="item-hidden">
+                <a href="#"><div class="menu_box--item">  Carga masiva</div></a>                
+                <a href="#"><div class="menu_box--item">  Consulta atributos</div></a>                
+                <a href="#"><div class="menu_box--item">  Actualizar usuario</div></a>                
+            </div>
+        
+        <a href="#" onclick="eclipsev2()"><div class="menu_box--item"> <img src="./src/img/panel-eclipse/petition.png" alt="" style="width: 15px;margin-bottom: 5px;"> Informes</div></a>
+            <div class="item-hidden" id="item-hidden2">
+                <a href="#"><div class="menu_box--item">  Individual</div></a>                
+                <a href="#"><div class="menu_box--item">  General y equipo</div></a>                
+                <a href="#"><div class="menu_box--item">  Evaluaciones</div></a>                
+                <a href="#"><div class="menu_box--item">  Ranking</div></a>
+            </div>        
+    </center>
+    </div>
+    <!-- Navigation -->
+    <nav class="" role="">    
+        
+        <ul class="nav navbar-nav side-nav menuNav" style="background-color: white; margin-top: 20px;">
+            <!-- <ul class="menuNav nav" style="background-color: white; margin-top: 20px;">                 -->
+                <li class="menuNav">
+                    <a><i><img src="./src/img/menu/hogar.png" alt="" style="width: 25px;margin: 5px;"></i> Inicio </a>                    
+                </li>                
+                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar"></ul>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <img src="./src/img/panel-eclipse/info.png" alt="" style="width: 25px;margin: 5px;">Información
+                        </a>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/bulk_load">Carga masiva</a>
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/attributes">Consulta atributos</a>
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/update_user">Actualizar usuario</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <img src="./src/img/panel-eclipse/file.png" alt="" style="width: 25px;margin: 5px;"> Informes
+                        </a>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/reports">Individual</a>
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/general_team">General y equipo</a>
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/general_evaluation">Evaluaciones</a>
+                                <a class="collapse-item" href="http://18.233.25.142/evaluaciones/admin/general_ranking">Ranking</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+           </ul>
+        
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!--  -->    
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row" id="main" >
+                <div class="col-sm-12 col-md-12 well contentProfile" id="content">
+                    <div class="col-12 col-lg-6">
+                        <form method="POST" class="register-form px-5 needs-validation" id="list-projects-form" novalidate="novalidate" onsubmit="return false">
+                            <div class="form-group">
+                                <label for="tipo_documento" class="required"><i class="fa fa-tasks"></i> Por favor seleccione la evaluación*</label>
+                                <select class="form-control" name="project" required>
+                                    <option value="" style="display: none;">-- Seleccionar --</option>
+                                    <option value="2">Liderazgo comercial canal corredores</option>
+                                    <option value="3">Valoración de desempeño Softline</option>
+                                    <option value="1">Valoracion seguros bolivar - Directores comerciales</option>                                                                                    
+                                </select>
+                                <div class="invalid-feedback">Debe seleccionar un proyecto.</div>
+                            </div>
+                        </form>
+                    </div>           
+                </div>    
+            </div>    
+        </div>    
+    </div>
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+        <span>Copyright &copy; Your Website 2021</span>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Core plugin JavaScript-->
+<script src="http://18.233.25.142/evaluaciones/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="http://18.233.25.142/evaluaciones/assets/js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="http://18.233.25.142/evaluaciones/assets/vendor/chart.js/Chart.min.js"></script>
+
+<script src="http://18.233.25.142/evaluaciones/assets/js/demo/chart-area-demo.js"></script>
+<script src="http://18.233.25.142/evaluaciones/assets/js/demo/chart-pie-demo.js"></script>
+<script type="text/javascript" var base_url = 'http://18.233.25.142/evaluaciones/'></script>
+<script src="http://18.233.25.142/evaluaciones/assets/js/scripts.js" type="text/javascript"></script>
+
+
+</body>
+</html>
