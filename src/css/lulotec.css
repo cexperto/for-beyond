@@ -1,10 +1,10 @@
 body{
-    background-image: url('../img/lulotec/Fondo.jpg');    
+    background-image: url('../img/lulotec/fondo-nuevo.jpg');    
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    
 }
 .header{
     display: flex;
@@ -74,7 +74,22 @@ Fuente helveltica
     .text{
         font-size: 20px;
     }
- }
+ 
+}
+@media only screen and (max-width: 834px){
+    body{
+        background-image: url('../img/lulotec/copia.jpg');
+    }
+    .icon{
+        margin: 40px;
+    }
+    .col-sm-8{
+        width: 100%;
+    }
+    .title, .notes{
+        text-align: center;
+    }
+}
  @media only screen and (max-width: 768px){
     body{
         background-image: url('../img/lulotec/copia.jpg');
@@ -82,19 +97,26 @@ Fuente helveltica
         background-size: cover;
     }
     .container__text{
-        height: 300px;
+        height: 500px;
     }
     .icon{
         height: 80px;
+        margin: 30px;
+
     }
     .title{
-        font-size: 20px;        
+        font-size: 20px;
+        text-align: center;
     }
     .text{
-        font-size: 10px;
+        font-size: 15px;
     }
     .notes{
         font-size: 25px;
+        text-align: center;
+    }    
+    .col-sm-8{
+        width: 100%;
     }
 
  }
@@ -141,4 +163,10 @@ Fuente helveltica
     .space{
         display: none;
     }
+ }
+ @media only screen and (max-width: 330px){
+    .notes{
+        margin-bottom: 50px;
+    }
+    
  }
