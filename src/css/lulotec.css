@@ -1,0 +1,129 @@
+body{
+    background-image: url('../img/lulotec/Fondo.jpg');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    margin-top: 10px;
+    height: 100px;
+}
+.idu{
+    margin-left: 100px;
+}
+
+.container__text{    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    
+    height: 460px;
+}
+.title{
+    color: #EB5A27;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 120px;
+}
+.text{    
+    font-size: 20px;
+    margin-left: 120px;
+    font-weight: bold;
+    color:#6D6E71;
+}
+.notes{
+    margin-left: 120px;
+    font-size: 35px;
+    font-weight: bold;
+    color:#6D6E71;    
+}
+/* 
+#6D6E71
+Fuente helveltica
+ */
+ @media only screen and (max-width: 2000px){   
+    .container__text{
+        height: 700px;        
+    }
+    .title{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 30px;
+    }
+    .notes{
+        font-size: 35px;
+    }
+
+ }
+ @media only screen and (max-width: 1700px){
+    .container__text{
+        height: 450px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 20px;
+    }
+ }
+ @media only screen and (max-width: 768px){
+    body{
+        background-image: url('../img/lulotec/copia.jpg');
+        background-position: left;
+    }
+    .container__text{
+        height: 300px;
+    }
+    .icon{
+        height: 80px;
+    }
+    .title{
+        font-size: 20px;        
+    }
+    .text{
+        font-size: 10px;
+    }
+    .notes{
+        font-size: 25px;
+    }
+
+ }
+ @media only screen and (max-width: 550px){
+     
+     .icon{
+         margin-left: 30px;
+         height: 40px;         
+     }
+     .container__text{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 90%;
+         margin: 10px auto;
+     }
+     .title, .notes{
+         margin:0px;
+     }
+     .text{
+         margin-left: 10px;
+     }
+ }
+ @media only screen and (max-width: 330px){     
+     .idu{
+         margin-left: 15px;
+     }
+     .container__text{
+        height: 350px;
+    }
+     .title, .text, .notes{
+         text-align: center;
+     }
+ }
