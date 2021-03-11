@@ -77,7 +77,8 @@ Fuente helveltica
  @media only screen and (max-width: 768px){
     body{
         background-image: url('../img/lulotec/copia.jpg');
-        background-position: left;
+        
+        background-size: cover;
     }
     .container__text{
         height: 300px;
@@ -96,8 +97,7 @@ Fuente helveltica
     }
 
  }
- @media only screen and (max-width: 550px){
-     
+ @media only screen and (max-width: 550px){     
      .icon{
          margin-left: 30px;
          height: 40px;         
@@ -116,9 +116,10 @@ Fuente helveltica
          margin-left: 10px;
      }
  }
- @media only screen and (max-width: 330px){     
-     .idu{
-         margin-left: 15px;
+ @media only screen and (max-width: 400px){     
+     .icon{
+         margin: 10px 40px;
+         height: 30px;
      }
      .container__text{
         height: 350px;
@@ -126,4 +127,17 @@ Fuente helveltica
      .title, .text, .notes{
          text-align: center;
      }
+    .title{
+        font-size: 17px;
+    }
+    .text{
+        font-size: 13px;
+        text-align: justify;
+    }
+    .notes{
+        font-size: 20px;
+    }
+    .space{
+        display: none;
+    }
  }
