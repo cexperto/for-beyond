@@ -1,5 +1,5 @@
 body{
-    background-image: url('../img/lulotec/fondo-nuevo.jpg');    
+    background-image: url('../img/lulotec/Mesa\ de\ trabajo\ 8-100.jpg');    
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
@@ -54,13 +54,13 @@ Fuente helveltica
         height: 700px;        
     }
     .title{
-        font-size: 40px;
+        font-size: 36px;
     }
     .text{
-        font-size: 30px;
+        font-size: 26px;
     }
     .notes{
-        font-size: 35px;
+        font-size: 31px;
     }
 
  }
@@ -69,16 +69,22 @@ Fuente helveltica
         height: 450px;
     }
     .title{
-        font-size: 30px;
+        font-size: 26px;
     }
     .text{
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .notes{
+        font-size: 27px;
     }
  
 }
 @media only screen and (max-width: 834px){
     body{
         background-image: url('../img/lulotec/copia.jpg');
+    }
+    .space{
+        display: none;
     }
     .icon{
         margin: 40px;
@@ -97,12 +103,11 @@ Fuente helveltica
         background-size: cover;
     }
     .container__text{
-        height: 500px;
+        height: 400px;
     }
     .icon{
         height: 80px;
         margin: 30px;
-
     }
     .title{
         font-size: 20px;
@@ -151,14 +156,15 @@ Fuente helveltica
          text-align: center;
      }
     .title{
-        font-size: 17px;
+        font-size: 13px;
     }
     .text{
-        font-size: 13px;
-        text-align: justify;
+        font-size: 10px; 
+        text-align: justify;      
     }
     .notes{
-        font-size: 20px;
+        font-size: 16px;
+        margin-bottom: 40px;
     }
     .space{
         display: none;
