@@ -1,0 +1,101 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.icon{
+    margin: 10px 0px 5px 0px;
+    height: 60px;
+    background-color: white;
+}
+.font{
+    background-image: url('../img/idu/Fondo-idu.jpg');  
+    background-repeat: no-repeat;
+}
+.text__img{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 105px;
+    padding-bottom: 50px;
+    line-height : 35px;
+}
+.container__idu{
+    max-width: 600px; 
+}
+.text{
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(148 , 148, 148);
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+.text__title{
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+span{
+    color: rgb(106, 106, 106);
+    font-weight: bold;
+}
+.btn{    
+    background-color: rgb(0, 148, 218);
+    border: 1px solid gray;
+    margin: 10px auto;
+    color: white;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@media only screen and (max-width: 550px){
+    .font{
+        background-image: url('../img/idu/Fondo-idu.jpg');  
+        background-size: cover;
+    }
+    .container{
+        padding: 0px;
+    }
+    .icon{
+        height: 40px;
+    }
+    .text__img{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        line-height : 25px;
+    }
+    .text{        
+        margin-bottom: 30px;        
+    }
+
+}
+@media only screen and (max-width: 330px){
+    body{
+        overflow-x: hidden;
+    }
+    .font{
+        background-image: url('../img/idu/Fondo-idu.jpg');  
+        background-size: cover;
+    }
+    .text__img{        
+        font-size: 15px;        
+        padding-top: 20px;
+        padding-bottom: 30px;
+        line-height : 15px;    
+    }
+    .text{        
+        margin-bottom: 10px;
+    }
+    .btn{
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+}
