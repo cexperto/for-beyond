@@ -49,18 +49,25 @@ body{
 #6D6E71
 Fuente helveltica
  */
- @media only screen and (max-width: 2000px){   
+ @media only screen and (max-width: 2000px){
+    .icon {
+        margin: 10px 200px;
+    }
     .container__text{
-        height: 700px;        
+        height: 700px;
+    }
+    .title, .text, .notes{
+        margin-left: 200px;
     }
     .title{
-        font-size: 36px;
+        font-size: 36px;              
     }
     .text{
-        font-size: 26px;
+        font-size: 24px;
     }
     .notes{
         font-size: 31px;
+        margin-bottom: 150px;
     }
 
  }
@@ -68,16 +75,28 @@ Fuente helveltica
     .container__text{
         height: 450px;
     }
+    .idu{
+        margin: 10px 0px 10px 120px;
+    }
+    .title, .text, .notes{        
+        margin-left: 120px;
+    }
+    .lulo{
+        margin: 10px auto;
+    }
+    .icon{
+        height: 80px;
+    }
     .title{
-        font-size: 26px;
+        font-size: 30px;
     }
     .text{
-        font-size: 16px;
+        font-size: 20px;
     }
     .notes{
-        font-size: 27px;
+        font-size: 31px;
+        margin-bottom: 0px;
     }
- 
 }
 @media only screen and (max-width: 834px){
     body{
@@ -137,12 +156,10 @@ Fuente helveltica
          width: 90%;
          margin: 10px auto;
      }
-     .title, .notes{
+     .title, .text ,.notes{
          margin:0px;
      }
-     .text{
-         margin-left: 10px;
-     }
+     
  }
  @media only screen and (max-width: 400px){     
      .icon{
@@ -152,7 +169,7 @@ Fuente helveltica
      .container__text{
         height: 350px;
     }
-     .title, .text, .notes{
+     .title, .notes{
          text-align: center;
      }
     .title{
@@ -160,11 +177,13 @@ Fuente helveltica
     }
     .text{
         font-size: 10px; 
-        text-align: justify;      
+        text-align: justify;
+        padding: 10px;
     }
     .notes{
         font-size: 16px;
         margin-bottom: 40px;
+        padding: 10px;
     }
     .space{
         display: none;
@@ -174,5 +193,4 @@ Fuente helveltica
     .notes{
         margin-bottom: 50px;
     }
-    
  }
